@@ -17,3 +17,4 @@ ENV/
 # CV outputs / diagnostic previews
 samples/preview_*.jpg
 *.preview.jpg
+samples/
