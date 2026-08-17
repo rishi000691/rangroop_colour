@@ -132,11 +132,17 @@ def classify_undertone(a_star: float, b_star: float) -> Tuple[str, float]:
     # Classification logic:
     # Olive: Characterized by low relative redness (low a*) with greenish-yellow undertone,
     # or elevated hue angle with muted a* channel (a_star / chroma < 0.45 or low a* with b* > 10).
+    #
+    # Use a signed hue angle in (-180°, 180°] for threshold comparisons to correctly handle
+    # wraparound near 0°/360°. For example, a raw hue of 356.68° is equivalent to -3.32°,
+    # which correctly falls in the Cool range rather than Warm.
+    signed_hue = hue_angle if hue_angle <= 180.0 else hue_angle - 360.0
+
     if red_chroma_ratio < 0.44 and b_star > 8.0:
         undertone = "Olive"
-    elif hue_angle >= 58.0:
+    elif signed_hue >= 58.0:
         undertone = "Warm"
-    elif hue_angle <= 52.0:
+    elif signed_hue <= 52.0:
         undertone = "Cool"
     else:
         undertone = "Neutral"
