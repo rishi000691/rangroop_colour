@@ -77,7 +77,80 @@ Usage
   result = get_color_palette_from_analysis(phase1)
 """
 
+import math
 from typing import Dict, Any, List, Optional
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Contrast & colour utilities
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Minimum CIE76 delta-E a recommended colour must have against the measured
+# skin tone. Below this, the colour is too similar to the skin to be useful.
+_MIN_RECOMMENDED_DELTA_E: float = 25.0
+
+# L* threshold above which a colour is considered "near-white". Near-whites
+# are excellent for deep skin tones and must never appear on an avoid list.
+_NEAR_WHITE_L_THRESHOLD: float = 90.0
+
+
+def _hex_to_lab(hex_color: str) -> tuple:
+    """
+    Convert a hex colour string (e.g. '#FF0000') to CIE L*a*b* (D65).
+    Uses the standard IEC 61966-2-1 sRGB → XYZ → Lab pipeline.
+    """
+    h = hex_color.lstrip('#')
+    r, g, b = (int(h[i:i+2], 16) / 255.0 for i in (0, 2, 4))
+
+    # sRGB gamma expansion (IEC 61966-2-1)
+    def _linearise(c: float) -> float:
+        return c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4
+
+    r, g, b = _linearise(r), _linearise(g), _linearise(b)
+
+    # Linear sRGB → CIE XYZ (D65 illuminant)
+    X = r * 0.4124564 + g * 0.3575761 + b * 0.1804375
+    Y = r * 0.2126729 + g * 0.7151522 + b * 0.0721750
+    Z = r * 0.0193339 + g * 0.1191920 + b * 0.9503041
+
+    # CIE XYZ → L*a*b* (D65 white point: Xn=0.95047, Yn=1.0, Zn=1.08883)
+    def _f(t: float) -> float:
+        return t ** (1.0 / 3.0) if t > 0.008856 else (7.787 * t + 16.0 / 116.0)
+
+    fx, fy, fz = _f(X / 0.95047), _f(Y / 1.0), _f(Z / 1.08883)
+    L = 116.0 * fy - 16.0
+    a = 500.0 * (fx - fy)
+    b2 = 200.0 * (fy - fz)
+    return (L, a, b2)
+
+
+def delta_e_lab(hex_color: str, skin_lab: List[float]) -> float:
+    """
+    Compute CIE76 delta-E between a hex colour and a skin Lab triple.
+
+    Parameters
+    ----------
+    hex_color : str
+        Hex colour to evaluate (e.g. '#8B7355').
+    skin_lab : list
+        [L*, a*, b*] of the measured skin tone (from Phase 1 dominant_lab).
+
+    Returns
+    -------
+    float
+        CIE76 colour difference. Values < 25 indicate the colour is too
+        close to the skin tone for a useful clothing recommendation.
+    """
+    cL, ca, cb = _hex_to_lab(hex_color)
+    sL, sa, sb = skin_lab[0], skin_lab[1], skin_lab[2]
+    return math.sqrt((cL - sL) ** 2 + (ca - sa) ** 2 + (cb - sb) ** 2)
+
+
+def is_near_white(hex_color: str) -> bool:
+    """Return True if the colour's L* is above the near-white threshold."""
+    L, _, _ = _hex_to_lab(hex_color)
+    return L > _NEAR_WHITE_L_THRESHOLD
+
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -556,25 +629,32 @@ def get_color_palette_from_analysis(phase1_result: Dict[str, Any]) -> Dict[str, 
     """
     Convenience wrapper that accepts the full Phase 1 JSON dict directly.
 
+    In addition to the season lookup, this function applies two post-processing
+    filters to the raw palette data:
+
+    1. **Contrast filter (Bug 1)**: Any recommended colour with CIE76 delta-E
+       < 25 against the measured skin tone is removed, because such colours
+       appear washed-out or invisible against the person's complexion.
+       Removed entries are reported in ``low_contrast_removed``.
+
+    2. **Near-white avoid filter (Bug 2)**: For deep skin tones (ITA ≤ 10°),
+       any near-white colour (L* > 90) is removed from the avoid list, because
+       white / near-white provides excellent contrast on deep skin and should
+       never be discouraged.
+       Removed entries are reported in ``near_white_removed_from_avoid``.
+
     Parameters
     ----------
     phase1_result : dict
         The output dict from `skin_tone_analyzer.analyze_skin_tone()`.
-        Must contain keys "undertone" and "ita_value".
-        If the dict contains an "error" key, it is returned as-is.
+        Must contain keys ``undertone``, ``ita_value``, and ``dominant_lab``.
+        If the dict contains an ``error`` key, it is returned as-is.
 
     Returns
     -------
     dict
-        Combined Phase 1 analysis + Phase 2 palette recommendation.
-
-    Example
-    -------
-        from app.cv.skin_tone_analyzer import analyze_skin_tone
-        from app.cv.palette_lookup import get_color_palette_from_analysis
-
-        phase1 = analyze_skin_tone("selfie.jpg")
-        result = get_color_palette_from_analysis(phase1)
+        Combined Phase 1 analysis + Phase 2 palette recommendation, with
+        contrast scores and filter audit fields appended.
     """
     # Pass through Phase 1 errors unchanged
     if "error" in phase1_result:
@@ -582,6 +662,7 @@ def get_color_palette_from_analysis(phase1_result: Dict[str, Any]) -> Dict[str, 
 
     undertone = phase1_result.get("undertone")
     ita_value = phase1_result.get("ita_value")
+    skin_lab: Optional[List[float]] = phase1_result.get("dominant_lab")
 
     if undertone is None or ita_value is None:
         return {
@@ -594,8 +675,53 @@ def get_color_palette_from_analysis(phase1_result: Dict[str, Any]) -> Dict[str, 
 
     palette_result = get_color_palette(undertone, ita_value)
 
-    # Merge Phase 1 fields into the result so the frontend has everything
+    # ── Bug 1: Contrast filter ────────────────────────────────────────────────
+    # Remove recommended colours that are too similar to the skin tone.
+    low_contrast_removed: List[str] = []
+    if skin_lab is not None and len(skin_lab) == 3:
+        filtered_recommended: List[str] = []
+        for color in palette_result["recommended_colors"]:
+            de = delta_e_lab(color, skin_lab)
+            if de >= _MIN_RECOMMENDED_DELTA_E:
+                filtered_recommended.append(color)
+            else:
+                low_contrast_removed.append(color)
+        palette_result = dict(palette_result)  # make a mutable copy
+        palette_result["recommended_colors"] = filtered_recommended
+
+    # ── Bug 2: Near-white avoid filter ───────────────────────────────────────
+    # For deep skin tones, near-whites are excellent (high contrast) and must
+    # never appear on the avoid list.
+    near_white_removed_from_avoid: List[str] = []
+    depth_bucket = _ita_to_depth_bucket(ita_value)
+    if depth_bucket == "deep":
+        filtered_avoid: List[str] = []
+        for color in palette_result["avoid_colors"]:
+            if is_near_white(color):
+                near_white_removed_from_avoid.append(color)
+            else:
+                filtered_avoid.append(color)
+        palette_result["avoid_colors"] = filtered_avoid
+
+    # ── Audit fields ──────────────────────────────────────────────────────────
+    # Report what was filtered so results are transparent and testable.
+    audit: Dict[str, Any] = {}
+    if low_contrast_removed:
+        audit["low_contrast_removed"] = low_contrast_removed
+    if near_white_removed_from_avoid:
+        audit["near_white_removed_from_avoid"] = near_white_removed_from_avoid
+
+    # Add contrast scores for every recommended colour (for test/debug use)
+    if skin_lab is not None and len(skin_lab) == 3:
+        audit["recommended_contrast_scores"] = {
+            c: round(delta_e_lab(c, skin_lab), 1)
+            for c in palette_result["recommended_colors"]
+        }
+
+    # Merge Phase 1 fields + palette + audit into the final result
     combined = {**phase1_result, **palette_result}
+    if audit:
+        combined["audit"] = audit
     return combined
 
 
