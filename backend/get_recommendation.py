@@ -1,13 +1,9 @@
 """
-Full Pipeline: Photo -> Skin Analysis -> Palette Recommendation -> Visual Report
-----------------------------------------------------------------------------------
-Runs the Phase 1 skin analyser and Phase 2 palette lookup through the single
-canonical pipeline function `get_color_palette_from_analysis()`, which applies:
-  - contrast filtering (delta-E < 25 colours removed from recommended list)
-  - near-white filtering (L* > 90 colours removed from avoid list for deep skin)
-  - undertone confidence / illuminant bias reporting
-
-Generates an HTML report with colour swatches for human review.
+Full Pipeline: Photo -> Skin Analysis -> Palette Recommendation -> Clothing Match -> Visual Report
+--------------------------------------------------------------------------------------------------
+Runs the Phase 1 skin analyser, Phase 2 palette lookup (with contrast
+filtering), and Phase 3 clothing catalog matching through the canonical
+pipeline functions.
 
 Usage:
     python3 get_recommendation.py ../samples/sample_friend.jpg
@@ -17,22 +13,26 @@ import json
 import sys
 import os
 
-# Import the fixed pipeline directly — no subprocess, no raw JSON reads.
 from app.cv.skin_tone_analyzer import analyze_skin_tone
 from app.cv.palette_lookup import get_color_palette_from_analysis
+from app.cv.clothing_matcher import match_clothing
 
 
 def run_pipeline(image_path: str) -> dict:
     """
-    Run Phase 1 + Phase 2 through the canonical fixed pipeline.
-    Returns the combined result dict (or an error dict).
+    Run Phase 1 + Phase 2 + Phase 3 through the canonical fixed pipeline.
+    Returns the combined result dict including recommended_clothing.
     """
     phase1 = analyze_skin_tone(image_path)
-    return get_color_palette_from_analysis(phase1)
+    palette_result = get_color_palette_from_analysis(phase1)
+    if "error" not in palette_result:
+        clothing = match_clothing(palette_result)
+        palette_result["recommended_clothing"] = clothing
+    return palette_result
 
 
 def generate_html_report(image_path: str, result: dict, output_path: str) -> None:
-    """Generate a colour-swatch HTML report from the combined pipeline result."""
+    """Generate a colour-swatch + clothing-grid HTML report."""
 
     def swatch_html(colors: list, label: str) -> str:
         if not colors:
@@ -45,6 +45,44 @@ def generate_html_report(image_path: str, result: dict, output_path: str) -> Non
             for c in colors
         )
         return f"<h3>{label}</h3><div>{swatches}</div>"
+
+    def clothing_grid_html(clothing_result: dict) -> str:
+        items = clothing_result.get("matched_items", [])
+        if not items:
+            return "<p><em>No matching clothing items found for this palette.</em></p>"
+        cards = ""
+        for item in items:
+            color = item.get("color_hex", "#ccc")
+            name = item.get("name", "")
+            category = item.get("category", "").capitalize()
+            de_palette = item.get("min_palette_de", "")
+            closest = item.get("closest_palette_color", "")
+            skin_de = item.get("skin_de", "")
+            cards += (
+                f'<div style="display:inline-block;width:140px;vertical-align:top;'
+                f'margin:8px;border:1px solid #e0e0e0;border-radius:10px;'
+                f'padding:10px;box-shadow:0 2px 6px rgba(0,0,0,0.07);text-align:center;">'
+                f'<div style="width:100%;height:80px;background:{color};border-radius:6px;'
+                f'margin-bottom:8px;"></div>'
+                f'<div style="font-size:13px;font-weight:600;margin-bottom:2px;">{name}</div>'
+                f'<div style="font-size:11px;color:#888;">{category}</div>'
+                f'<div style="font-size:11px;color:#555;margin-top:4px;">{color}</div>'
+                f'<div style="font-size:10px;color:#aaa;margin-top:2px;">'
+                f'Palette ΔE={de_palette}'
+                f'<span style="display:inline-block;width:10px;height:10px;'
+                f'background:{closest};border:1px solid #ccc;border-radius:2px;'
+                f'vertical-align:middle;margin-left:4px;"></span>'
+                f'</div>'
+                f'<div style="font-size:10px;color:#aaa;">Skin ΔE={skin_de}</div>'
+                f'</div>'
+            )
+        total = clothing_result.get("total_matched", len(items))
+        header = (
+            f"<h2>Matching Clothing Items</h2>"
+            f"<p style='color:#555;font-size:13px;'>{len(items)} shown of {total} matches "
+            f"(palette ΔE &lt; 15, skin contrast ΔE &ge; 25)</p>"
+        )
+        return header + f"<div>{cards}</div>"
 
     audit = result.get("audit", {})
     contrast_scores = audit.get("recommended_contrast_scores", {})
@@ -59,7 +97,6 @@ def generate_html_report(image_path: str, result: dict, output_path: str) -> Non
             "Retake photo in natural daylight for a reliable result.</p>"
         )
 
-    # Contrast score table for recommended colours
     score_rows = ""
     for c, de in contrast_scores.items():
         score_rows += (
@@ -89,10 +126,14 @@ def generate_html_report(image_path: str, result: dict, output_path: str) -> Non
             f"{', '.join(removed_avoid)}</p>"
         )
 
+    clothing_html = ""
+    if "recommended_clothing" in result:
+        clothing_html = "<hr>" + clothing_grid_html(result["recommended_clothing"])
+
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head><meta charset="UTF-8"><title>rangroop — Color Recommendation</title></head>
-<body style="font-family: sans-serif; max-width: 780px; margin: 40px auto; line-height:1.6;">
+<body style="font-family: sans-serif; max-width: 900px; margin: 40px auto; line-height:1.6;">
     <h1>Your Color Profile</h1>
     <p><b>Photo:</b> {os.path.basename(image_path)}</p>
     <p><b>Skin Type:</b> {result.get("skin_type")} &nbsp;|&nbsp;
@@ -107,6 +148,7 @@ def generate_html_report(image_path: str, result: dict, output_path: str) -> Non
     {swatch_html(result.get("recommended_colors", []), "Recommended Colors")}
     {swatch_html(result.get("avoid_colors", []), "Colors to Avoid")}
     <p style="margin-top:16px;">{result.get("explanation", "")}</p>
+    {clothing_html}
     <hr>
     {score_table}
     {removed_note}
@@ -156,6 +198,21 @@ if __name__ == "__main__":
         for color, score in audit["recommended_contrast_scores"].items():
             flag = "✓" if score >= 25 else "⚠ FAIL"
             print(f"  {color}  dE={score}  {flag}")
+
+    clothing = result.get("recommended_clothing", {})
+    matched_items = clothing.get("matched_items", [])
+    if matched_items:
+        print(f"\nMatching clothing items ({len(matched_items)} shown, "
+              f"{clothing.get('total_matched', len(matched_items))} total):")
+        for item in matched_items:
+            print(f"  [{item['category']:8s}] {item['name']:40s}  "
+                  f"{item['color_hex']}  palette ΔE={item['min_palette_de']}  "
+                  f"skin ΔE={item.get('skin_de', '—')}")
+    rejected = clothing.get("skin_contrast_rejected", [])
+    if rejected:
+        print(f"\nSkin-contrast rejected ({len(rejected)} items):")
+        for item in rejected:
+            print(f"  {item['name']}  skin ΔE={item['skin_de']} (< 25)")
 
     output_name = os.path.splitext(os.path.basename(image_path))[0]
     output_path = f"../results_{output_name}.html"

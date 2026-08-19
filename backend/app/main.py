@@ -24,6 +24,7 @@ import numpy as np
 
 from app.cv.skin_tone_analyzer import analyze_skin_tone
 from app.cv.palette_lookup import get_color_palette_from_analysis
+from app.cv.clothing_matcher import match_clothing
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Config
@@ -186,6 +187,10 @@ async def analyze(
 
         # Phase 2: palette lookup (handles phase1 errors internally)
         result = get_color_palette_from_analysis(phase1)
+
+        # Phase 3: clothing catalog matching (only if Phase 2 succeeded)
+        if "error" not in result:
+            result["recommended_clothing"] = match_clothing(result)
 
     except Exception as exc:
         logger.exception("Unexpected error during analysis: %s", exc)
