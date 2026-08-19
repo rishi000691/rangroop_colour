@@ -24,10 +24,8 @@
         "#F4A460",
         "#DAA520",
         "#CD853F",
-        "#E9967A",
         "#F0E68C",
-        "#D2691E",
-        "#FFDAB9"
+        "#D2691E"
       ],
       "avoid_colors": [
         "#000080",
@@ -41,7 +39,6 @@
         "#4682B4",
         "#9370DB",
         "#5F9EA0",
-        "#C0C0C0",
         "#87CEEB",
         "#DA70D6",
         "#B0E0E6"
@@ -57,10 +54,8 @@
       "recommended_colors": [
         "#B0C4DE",
         "#D8BFD8",
-        "#F5DEB3",
         "#DDA0DD",
         "#E6E6FA",
-        "#BC8F8F",
         "#F0F8FF"
       ],
       "avoid_colors": [
@@ -90,8 +85,7 @@
         "#DAA520",
         "#CD5C5C",
         "#F0E68C",
-        "#B8860B",
-        "#E9967A"
+        "#B8860B"
       ],
       "avoid_colors": [
         "#000080",
@@ -117,11 +111,8 @@
     "Light|Neutral": {
       "recommended_colors": [
         "#708090",
-        "#BC8F8F",
-        "#D2B48C",
         "#9370DB",
-        "#8FBC8F",
-        "#F5DEB3"
+        "#8FBC8F"
       ],
       "avoid_colors": [
         "#FF4500",
@@ -134,8 +125,7 @@
         "#556B2F",
         "#BDB76B",
         "#A0522D",
-        "#6B8E23",
-        "#DEB887"
+        "#6B8E23"
       ],
       "avoid_colors": [
         "#FF00FF",
@@ -149,8 +139,7 @@
         "#CD853F",
         "#D2691E",
         "#8B4513",
-        "#DAA520",
-        "#BC8F8F"
+        "#DAA520"
       ],
       "avoid_colors": [
         "#00008B",
@@ -175,11 +164,8 @@
     },
     "Intermediate|Neutral": {
       "recommended_colors": [
-        "#8B7355",
         "#708090",
-        "#A0522D",
-        "#5F9EA0",
-        "#BC8F8F"
+        "#5F9EA0"
       ],
       "avoid_colors": [
         "#FFFF00",
@@ -192,8 +178,7 @@
         "#6B8E23",
         "#8B4513",
         "#556B2F",
-        "#CD853F",
-        "#A0522D"
+        "#CD853F"
       ],
       "avoid_colors": [
         "#FF69B4",
@@ -207,7 +192,6 @@
         "#B8860B",
         "#D2691E",
         "#CD853F",
-        "#A0522D",
         "#DAA520"
       ],
       "avoid_colors": [
@@ -232,11 +216,8 @@
     },
     "Tan|Neutral": {
       "recommended_colors": [
-        "#8B7355",
         "#5F9EA0",
-        "#A0522D",
-        "#708090",
-        "#BC8F8F"
+        "#708090"
       ],
       "avoid_colors": [
         "#FFFF00",
@@ -248,8 +229,7 @@
       "recommended_colors": [
         "#556B2F",
         "#8B4513",
-        "#6B8E23",
-        "#A0522D"
+        "#6B8E23"
       ],
       "avoid_colors": [
         "#FF1493",
@@ -266,7 +246,6 @@
         "#CD853F"
       ],
       "avoid_colors": [
-        "#E6E6FA",
         "#ADD8E6"
       ],
       "explanation": "Dark warm skin carries bold, saturated warm colors beautifully."
@@ -280,22 +259,17 @@
         "#20B2AA"
       ],
       "avoid_colors": [
-        "#F0E68C",
         "#DEB887"
       ],
-      "explanation": "Dark cool skin suits vivid jewel tones exceptionally — royal blue, teal, and sea green all create striking, high-contrast harmony."
+      "explanation": "Dark cool skin suits vivid jewel tones exceptionally \u2014 royal blue, teal, and sea green all create striking, high-contrast harmony."
     },
     "Dark|Neutral": {
       "recommended_colors": [
-        "#8B7355",
         "#4682B4",
         "#B8860B",
         "#5F9EA0"
       ],
-      "avoid_colors": [
-        "#FFFACD",
-        "#F0FFF0"
-      ],
+      "avoid_colors": [],
       "explanation": "Neutral dark skin handles bold colors from both warm and cool families well."
     },
     "Dark|Olive": {
@@ -306,8 +280,7 @@
         "#6B8E23"
       ],
       "avoid_colors": [
-        "#FFB6C1",
-        "#E0FFFF"
+        "#FFB6C1"
       ],
       "explanation": "Olive-toned dark skin pairs richly with deep warm earth tones and forest greens."
     },
@@ -318,10 +291,7 @@
         "#8B4513",
         "#D2691E"
       ],
-      "avoid_colors": [
-        "#E6E6FA",
-        "#F0F8FF"
-      ],
+      "avoid_colors": [],
       "explanation": "Very dark warm skin carries the boldest, most saturated warm colors stunningly."
     },
     "Very Dark|Cool": {
@@ -332,7 +302,6 @@
         "#008B8B"
       ],
       "avoid_colors": [
-        "#FFFACD",
         "#F5DEB3"
       ],
       "explanation": "Very dark cool skin suits the most vivid jewel tones for maximum striking contrast."
@@ -340,13 +309,9 @@
     "Very Dark|Neutral": {
       "recommended_colors": [
         "#4682B4",
-        "#B8860B",
-        "#8B7355"
+        "#B8860B"
       ],
-      "avoid_colors": [
-        "#FFFAF0",
-        "#F0FFFF"
-      ],
+      "avoid_colors": [],
       "explanation": "Neutral very dark skin carries bold colors from either family."
     },
     "Very Dark|Olive": {
@@ -355,10 +320,7 @@
         "#8B4513",
         "#B8860B"
       ],
-      "avoid_colors": [
-        "#E0FFFF",
-        "#FFF0F5"
-      ],
+      "avoid_colors": [],
       "explanation": "Olive very dark skin pairs powerfully with deep warm earth tones."
     }
   }
