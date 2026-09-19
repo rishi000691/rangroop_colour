@@ -14,7 +14,6 @@ import sys
 import os
 
 from app.cv.skin_tone_analyzer import analyze_skin_tone
-from app.cv.palette_lookup import get_color_palette_from_analysis
 from app.cv.clothing_matcher import match_clothing
 
 
@@ -23,12 +22,11 @@ def run_pipeline(image_path: str) -> dict:
     Run Phase 1 + Phase 2 + Phase 3 through the canonical fixed pipeline.
     Returns the combined result dict including recommended_clothing.
     """
-    phase1 = analyze_skin_tone(image_path)
-    palette_result = get_color_palette_from_analysis(phase1)
-    if "error" not in palette_result:
-        clothing = match_clothing(palette_result)
-        palette_result["recommended_clothing"] = clothing
-    return palette_result
+    analysis_result = analyze_skin_tone(image_path)
+    if "error" not in analysis_result:
+        clothing = match_clothing(analysis_result)
+        analysis_result["recommended_clothing"] = clothing
+    return analysis_result
 
 
 def generate_html_report(image_path: str, result: dict, output_path: str) -> None:

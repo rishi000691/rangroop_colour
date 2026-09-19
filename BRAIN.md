@@ -56,10 +56,10 @@ entire product. No catalog, no cart, no checkout, no seller accounts.
 - Deployment: Render (backend) + Vercel (frontend)
 
 ## AI Pipeline Logic (Core IP — Keep This Consistent)
-**Corrected during Phase 1 build — this supersedes the earlier single-ITA
-version.** ITA alone only measures lightness/melanin (L* and b*), so it
-cannot distinguish warm from cool undertone if two skin tones share the
-same lightness. Fixed by using two separate formulas:
+**Updated again — this supersedes the earlier ITA+HueAngle-only version
+AND the separate palette_lookup.json approach.** Both undertone
+classification AND color recommendation now live inside
+skin_tone_analyzer.py as one consolidated pipeline:
 
 1. MediaPipe Face Mesh → landmarks
 2. Mask cheeks + forehead only (avoid eyes/lips/hair/shadow)
@@ -67,17 +67,35 @@ same lightness. Fixed by using two separate formulas:
 4. K-Means (k=3) → dominant skin color in LAB
 5. **Skin type/depth** — ITA formula: `ITA = atan((L* - 50) / b*) × (180/π)`,
    classified using standard dermatological ITA ranges (Chardon et al.,
-   1991) from Very Light to Dark
-6. **Undertone** — Hue Angle formula: `arctan(b*/a*)`, categorizes
-   redness (a*) vs. yellowness (b*) into warm / cool / neutral / olive
-7. Lookup table: undertone + skin depth → 12-season color analysis
-   palette
-8. Return palette + a handful of illustrative "colors that suit you"
-   swatches (hex codes), not real product matches
+   1991)
+6. **Undertone** — Hue Angle formula: `arctan(b*/a*)`, with wraparound
+   handling near 360°/0° (fixed — see git history)
+7. **Season classification** (e.g. "Bright Winter") — full 12-season
+   system, derived from skin_type + undertone + additional factors
+8. **Illuminant bias detection** — checks if the analyzed lighting
+   looks unusual/biased (flagged if above a threshold), to warn about
+   unreliable results from bad lighting
+9. **Color recommendation** — generates recommended + avoid colors for
+   the classified season
+10. **Delta-E contrast scoring** — for each recommended color, computes
+    delta-E (perceptual color difference) against the person's actual
+    skin LAB value, to confirm the color will actually contrast/pop
+    against their specific skin tone, not just their general season
 
-Phase 1 output JSON should include both `skin_type` (from ITA) and
-`undertone` (from Hue Angle) as separate fields — don't collapse them
-into one value.
+**RETIRED (as of this pivot):** `palette_lookup.json`,
+`cross_check_palette.py`, and the standalone lookup-table approach in
+`get_recommendation.py`. These were the simpler skin_type+undertone
+grid we built and cross-checked first — superseded by the season +
+delta-E system above, which is more scientifically grounded (delta-E is
+an established color science metric) and closer to the real 12-season
+professional framework. `get_recommendation.py` should now just call
+skin_tone_analyzer.py and render whatever season/colors/delta-E scores
+it outputs directly — no separate lookup step.
+
+**Not yet validated** — same caution applies as before: this system
+is new, untested against real people, and needs to go through the same
+testing steps (FFHQ batch test → real friend photos → ask real people
+if results feel accurate) before being trusted.
 
 ## Explicitly Out of Scope
 - E-commerce (catalog, cart, checkout, sellers)

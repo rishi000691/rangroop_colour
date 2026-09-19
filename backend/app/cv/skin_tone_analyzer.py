@@ -76,6 +76,11 @@ if not hasattr(google.protobuf.symbol_database.SymbolDatabase, 'GetPrototype'):
 import mediapipe as mp
 from sklearn.cluster import KMeans
 
+try:
+    from app.cv.palette_lookup import get_color_palette_from_analysis
+except ImportError:
+    from palette_lookup import get_color_palette_from_analysis
+
 
 # MediaPipe 468 Face Mesh Landmark Indices for specific regions
 # Forehead: Upper boundary + lower boundary above eyebrows
@@ -403,7 +408,7 @@ def analyze_skin_tone(
         + confidence_suffix
     )
 
-    return {
+    base_result = {
         "success": True,
         "dominant_lab": [round(l_star, 2), round(a_star, 2), round(b_star, 2)],
         "ita_value": round(ita_value, 2),
@@ -414,6 +419,8 @@ def analyze_skin_tone(
         "illuminant_bias": round(chroma_bias, 2),
         "confidence_notes": confidence_notes
     }
+
+    return get_color_palette_from_analysis(base_result)
 
 
 def main():
