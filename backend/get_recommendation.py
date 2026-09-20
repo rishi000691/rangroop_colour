@@ -181,7 +181,7 @@ if __name__ == "__main__":
     print(f"Skin Type : {result['skin_type']}  |  Undertone: {result['undertone']}"
           f"  (confidence: {result.get('undertone_confidence', '?')})")
     print(f"Season    : {result.get('season', '—')}  |  ITA: {result.get('ita_value')}")
-    print(f"Illuminant bias: {result.get('illuminant_bias', '?')} (threshold 6.0)")
+    print(f"Illuminant bias: {result.get('illuminant_bias', '?')} (moderate > 18.0, strong > 30.0)")
     print()
     print("Recommended colors:", result.get("recommended_colors"))
     print("Avoid colors      :", result.get("avoid_colors"))

@@ -387,14 +387,23 @@ def analyze_skin_tone(
     # means the raw a*/b* skin values may be shifted and undertone is unreliable.
     da_star, db_star, chroma_bias = estimate_illuminant_bias(image_bgr, mask)
 
-    # Confidence threshold: chroma_bias > 6 ≈ noticeable warm/cool cast
-    _ILLUMINANT_BIAS_THRESHOLD = 6.0
-    if chroma_bias > _ILLUMINANT_BIAS_THRESHOLD:
+    # Two-tier confidence thresholding based on scene chroma bias:
+    # <= 18.0: high confidence (natural daylight / mild white-balance offset)
+    # 18.0 to 30.0: medium confidence (moderate indoor lighting cast)
+    # > 30.0: low confidence (strong artificial / warm / cool lighting cast)
+    if chroma_bias > 30.0:
         undertone_confidence = "low"
         confidence_suffix = (
-            f" ⚠ Lighting cast detected (scene chroma bias {chroma_bias:.1f}, "
+            f" ⚠ Strong lighting cast detected (scene chroma bias {chroma_bias:.1f}, "
             f"da*={da_star:.1f}, db*={db_star:.1f}). "
             "Undertone result may be unreliable — retake photo in natural daylight."
+        )
+    elif chroma_bias > 18.0:
+        undertone_confidence = "medium"
+        confidence_suffix = (
+            f" ⚠ Moderate lighting cast detected (scene chroma bias {chroma_bias:.1f}, "
+            f"da*={da_star:.1f}, db*={db_star:.1f}). "
+            "Results are likely acceptable, but natural daylight is recommended for best accuracy."
         )
     else:
         undertone_confidence = "high"
@@ -540,7 +549,7 @@ def main():
         print(f"  ITA            : {result['ita_value']:.2f}°")
         print(f"  Dominant Lab   : L*={skin_lab[0]}  a*={skin_lab[1]}  b*={skin_lab[2]}")
         print(f"  Approx skin hex: {skin_hex}")
-        print(f"  Illuminant bias: {result['illuminant_bias']:.2f} (threshold 6.0)")
+        print(f"  Illuminant bias: {result['illuminant_bias']:.2f} (moderate > 18.0, strong > 30.0)")
         print(f"  Hue angle      : {result['hue_angle']:.2f}°")
         print()
 

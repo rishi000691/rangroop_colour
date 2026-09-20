@@ -81,12 +81,20 @@ export default function Results({ data, onReset }) {
         </div>
 
         {/* Lighting warning */}
-        {illuminant_bias != null && illuminant_bias > 6 && (
+        {illuminant_bias != null && illuminant_bias > 30 && (
           <div className="flex items-start gap-3 bg-amber-950/60 border border-amber-700/50 rounded-2xl px-4 py-3 animate-fade-in">
             <span className="text-lg mt-0.5">⚠️</span>
             <p className="text-amber-300 text-sm">
               Your photo had strong artificial lighting — results may be less accurate.
               Try retaking in natural daylight for best results.
+            </p>
+          </div>
+        )}
+        {illuminant_bias != null && illuminant_bias > 18 && illuminant_bias <= 30 && (
+          <div className="flex items-start gap-3 bg-yellow-950/40 border border-yellow-700/40 rounded-2xl px-4 py-3 animate-fade-in">
+            <span className="text-lg mt-0.5">💡</span>
+            <p className="text-yellow-200/90 text-sm">
+              Moderate lighting cast detected. Results are likely reasonable, but natural daylight gives the highest accuracy.
             </p>
           </div>
         )}
