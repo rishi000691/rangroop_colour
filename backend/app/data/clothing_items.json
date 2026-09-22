@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Rangroop clothing catalog. color_hex is the dominant fabric colour for delta-E matching.",
-    "version": "1.0",
-    "total_items": 42
+    "version": "2.0",
+    "total_items": 118
   },
   "items": [
     { "id": "C001", "name": "Crimson Slim-Fit Shirt",       "category": "shirt",   "color_hex": "#DC143C", "image_url": "/static/clothing/placeholder_shirt_red.png",       "gender": "unisex" },
@@ -46,6 +46,95 @@
     { "id": "C039", "name": "Lemon Yellow Oversized Knit",  "category": "sweater", "color_hex": "#FFF44F", "image_url": "/static/clothing/placeholder_sweater_yellow.png",  "gender": "unisex" },
     { "id": "C040", "name": "Deep Purple Midi Skirt",       "category": "skirt",   "color_hex": "#6A0DAD", "image_url": "/static/clothing/placeholder_skirt_purple.png",    "gender": "female" },
     { "id": "C041", "name": "Hot Pink Palazzo Pants",       "category": "pants",   "color_hex": "#FF1493", "image_url": "/static/clothing/placeholder_pants_pink.png",      "gender": "female" },
-    { "id": "C042", "name": "Dark Turquoise Wide Blazer",   "category": "blazer",  "color_hex": "#00868B", "image_url": "/static/clothing/placeholder_blazer_turq.png",     "gender": "unisex" }
+    { "id": "C042", "name": "Dark Turquoise Wide Blazer",   "category": "blazer",  "color_hex": "#00868B", "image_url": "/static/clothing/placeholder_blazer_turq.png",     "gender": "unisex" },
+
+    { "id": "C043", "name": "Warm Peach Cotton Shirt",      "category": "shirt",   "color_hex": "#F5C6A0", "image_url": "/static/clothing/placeholder_shirt_peach.png",     "gender": "unisex" },
+    { "id": "C044", "name": "Soft Mint Linen Shirt",        "category": "shirt",   "color_hex": "#98D8C8", "image_url": "/static/clothing/placeholder_shirt_mint.png",      "gender": "unisex" },
+    { "id": "C045", "name": "Golden Yellow Poplin Shirt",   "category": "shirt",   "color_hex": "#FFD700", "image_url": "/static/clothing/placeholder_shirt_gold.png",      "gender": "unisex" },
+    { "id": "C046", "name": "Rose Quartz Relaxed Blouse",   "category": "blouse",  "color_hex": "#F7CAC9", "image_url": "/static/clothing/placeholder_blouse_rose.png",     "gender": "female" },
+    { "id": "C047", "name": "Caramel Knit Top",             "category": "shirt",   "color_hex": "#E8B87E", "image_url": "/static/clothing/placeholder_shirt_caramel.png",   "gender": "unisex" },
+    { "id": "C048", "name": "Yellow-Green Casual Shirt",    "category": "shirt",   "color_hex": "#C5E17A", "image_url": "/static/clothing/placeholder_shirt_yg.png",        "gender": "unisex" },
+    { "id": "C049", "name": "Light Sky Blue Kurta",         "category": "kurta",   "color_hex": "#87CEEB", "image_url": "/static/clothing/placeholder_kurta_skyblue.png",   "gender": "unisex" },
+
+    { "id": "C050", "name": "Coral Wrap Dress",             "category": "dress",   "color_hex": "#FF7F50", "image_url": "/static/clothing/placeholder_dress_coral.png",     "gender": "female" },
+    { "id": "C051", "name": "Tomato Red Cotton T-Shirt",    "category": "t-shirt", "color_hex": "#FF6347", "image_url": "/static/clothing/placeholder_tshirt_tomato.png",   "gender": "unisex" },
+    { "id": "C052", "name": "Lime Green Polo T-Shirt",      "category": "t-shirt", "color_hex": "#32CD32", "image_url": "/static/clothing/placeholder_tshirt_lime.png",     "gender": "unisex" },
+    { "id": "C053", "name": "Terracotta Linen Blazer",      "category": "blazer",  "color_hex": "#E2725B", "image_url": "/static/clothing/placeholder_blazer_terra.png",    "gender": "unisex" },
+    { "id": "C054", "name": "Dark Orange Midi Skirt",       "category": "skirt",   "color_hex": "#FF8C00", "image_url": "/static/clothing/placeholder_skirt_orange.png",    "gender": "female" },
+    { "id": "C055", "name": "Warm Sand Chinos",             "category": "pants",   "color_hex": "#F0E68C", "image_url": "/static/clothing/placeholder_pants_sand.png",      "gender": "unisex" },
+
+    { "id": "C056", "name": "Soft Lavender Kurta",          "category": "kurta",   "color_hex": "#E6E6FA", "image_url": "/static/clothing/placeholder_kurta_lavender.png",  "gender": "unisex" },
+    { "id": "C057", "name": "Light Pink Chiffon Dress",     "category": "dress",   "color_hex": "#FFB6C1", "image_url": "/static/clothing/placeholder_dress_lpink.png",     "gender": "female" },
+    { "id": "C058", "name": "Powder Blue Blazer",           "category": "blazer",  "color_hex": "#C0D6E4", "image_url": "/static/clothing/placeholder_blazer_powder.png",   "gender": "unisex" },
+    { "id": "C059", "name": "Thistle Wrap Blouse",          "category": "blouse",  "color_hex": "#D8BFD8", "image_url": "/static/clothing/placeholder_blouse_thistle.png",  "gender": "female" },
+    { "id": "C060", "name": "Celadon Green Trousers",       "category": "pants",   "color_hex": "#ACE1AF", "image_url": "/static/clothing/placeholder_pants_celadon.png",  "gender": "unisex" },
+    { "id": "C061", "name": "Plum Silk Saree",              "category": "saree",   "color_hex": "#DDA0DD", "image_url": "/static/clothing/placeholder_saree_plum.png",     "gender": "female" },
+    { "id": "C062", "name": "Soft Rose Cotton Shirt",       "category": "shirt",   "color_hex": "#F0E0E0", "image_url": "/static/clothing/placeholder_shirt_softrose.png", "gender": "unisex" },
+
+    { "id": "C063", "name": "Steel Blue Formal Shirt",      "category": "shirt",   "color_hex": "#4682B4", "image_url": "/static/clothing/placeholder_shirt_steel.png",    "gender": "unisex" },
+    { "id": "C064", "name": "Dusty Rose Kurta",             "category": "kurta",   "color_hex": "#C08081", "image_url": "/static/clothing/placeholder_kurta_dustyrose.png","gender": "unisex" },
+    { "id": "C065", "name": "Cadet Blue Linen Blazer",      "category": "blazer",  "color_hex": "#5F9EA0", "image_url": "/static/clothing/placeholder_blazer_cadet.png",   "gender": "unisex" },
+    { "id": "C066", "name": "Slate Grey T-Shirt",           "category": "t-shirt", "color_hex": "#708090", "image_url": "/static/clothing/placeholder_tshirt_slate.png",   "gender": "unisex" },
+    { "id": "C067", "name": "Dusty Teal Midi Dress",        "category": "dress",   "color_hex": "#6B8E9B", "image_url": "/static/clothing/placeholder_dress_dteal.png",    "gender": "female" },
+    { "id": "C068", "name": "Medium Purple Silk Saree",     "category": "saree",   "color_hex": "#9370DB", "image_url": "/static/clothing/placeholder_saree_purple.png",   "gender": "female" },
+    { "id": "C069", "name": "Rosy Brown Trousers",          "category": "pants",   "color_hex": "#BC8F8F", "image_url": "/static/clothing/placeholder_pants_rosybrown.png","gender": "unisex" },
+    { "id": "C070", "name": "Soft Taupe Wide-Leg Pants",    "category": "pants",   "color_hex": "#D2B48C", "image_url": "/static/clothing/placeholder_pants_taupe.png",    "gender": "unisex" },
+
+    { "id": "C071", "name": "Light Slate Grey Blazer",      "category": "blazer",  "color_hex": "#778899", "image_url": "/static/clothing/placeholder_blazer_lslate.png",  "gender": "unisex" },
+    { "id": "C072", "name": "Sage Green Cotton Shirt",      "category": "shirt",   "color_hex": "#7A9A7E", "image_url": "/static/clothing/placeholder_shirt_sage.png",     "gender": "unisex" },
+    { "id": "C073", "name": "Dusty Mauve Kurta",            "category": "kurta",   "color_hex": "#C4AEAD", "image_url": "/static/clothing/placeholder_kurta_mauve.png",    "gender": "unisex" },
+    { "id": "C074", "name": "Muted Lilac Blouse",           "category": "blouse",  "color_hex": "#B8A9C9", "image_url": "/static/clothing/placeholder_blouse_lilac.png",   "gender": "female" },
+    { "id": "C075", "name": "Dark Sea Green T-Shirt",       "category": "t-shirt", "color_hex": "#8FBC8F", "image_url": "/static/clothing/placeholder_tshirt_seagreen.png","gender": "unisex" },
+    { "id": "C076", "name": "Warm Greige Trousers",         "category": "pants",   "color_hex": "#A09B8C", "image_url": "/static/clothing/placeholder_pants_greige.png",   "gender": "unisex" },
+    { "id": "C077", "name": "Taupe Grey Saree",             "category": "saree",   "color_hex": "#8B8589", "image_url": "/static/clothing/placeholder_saree_taupe.png",    "gender": "female" },
+    { "id": "C078", "name": "Muted Sky Blue Dress",         "category": "dress",   "color_hex": "#9DB4C0", "image_url": "/static/clothing/placeholder_dress_muteblue.png", "gender": "female" },
+
+    { "id": "C079", "name": "Sand Khaki Trousers",          "category": "pants",   "color_hex": "#C2B280", "image_url": "/static/clothing/placeholder_pants_khaki.png",    "gender": "unisex" },
+    { "id": "C080", "name": "Warm Taupe Blazer",            "category": "blazer",  "color_hex": "#8B7D6B", "image_url": "/static/clothing/placeholder_blazer_wtaupe.png",  "gender": "unisex" },
+    { "id": "C081", "name": "Sienna Cotton Shirt",          "category": "shirt",   "color_hex": "#A0522D", "image_url": "/static/clothing/placeholder_shirt_sienna.png",   "gender": "unisex" },
+    { "id": "C082", "name": "Muted Sage Kurta",             "category": "kurta",   "color_hex": "#9CAF88", "image_url": "/static/clothing/placeholder_kurta_sage.png",     "gender": "unisex" },
+    { "id": "C083", "name": "Warm Camel Blazer",            "category": "blazer",  "color_hex": "#C5A880", "image_url": "/static/clothing/placeholder_blazer_camel.png",   "gender": "unisex" },
+    { "id": "C084", "name": "Soft Mustard Blouse",          "category": "blouse",  "color_hex": "#D4A76A", "image_url": "/static/clothing/placeholder_blouse_mustard.png", "gender": "female" },
+    { "id": "C085", "name": "Cocoa Brown T-Shirt",          "category": "t-shirt", "color_hex": "#967969", "image_url": "/static/clothing/placeholder_tshirt_cocoa.png",   "gender": "unisex" },
+    { "id": "C086", "name": "Rosy Brown Saree",             "category": "saree",   "color_hex": "#BC8F8F", "image_url": "/static/clothing/placeholder_saree_rosybrown.png","gender": "female" },
+
+    { "id": "C087", "name": "Chocolate Brown Blazer",       "category": "blazer",  "color_hex": "#D2691E", "image_url": "/static/clothing/placeholder_blazer_choco.png",   "gender": "unisex" },
+    { "id": "C088", "name": "Dark Goldenrod Kurta",         "category": "kurta",   "color_hex": "#B8860B", "image_url": "/static/clothing/placeholder_kurta_dgold.png",    "gender": "unisex" },
+    { "id": "C089", "name": "Warm Tan Trousers",            "category": "pants",   "color_hex": "#CD853F", "image_url": "/static/clothing/placeholder_pants_warmtan.png",  "gender": "unisex" },
+    { "id": "C090", "name": "Saddle Brown Shirt",           "category": "shirt",   "color_hex": "#8B4513", "image_url": "/static/clothing/placeholder_shirt_saddle.png",   "gender": "unisex" },
+    { "id": "C091", "name": "Dark Olive Chinos",            "category": "pants",   "color_hex": "#556B2F", "image_url": "/static/clothing/placeholder_pants_dolive.png",   "gender": "unisex" },
+    { "id": "C092", "name": "Burnt Orange Saree",           "category": "saree",   "color_hex": "#CC5500", "image_url": "/static/clothing/placeholder_saree_burnt.png",    "gender": "female" },
+    { "id": "C093", "name": "Goldenrod Cotton Dress",       "category": "dress",   "color_hex": "#DAA520", "image_url": "/static/clothing/placeholder_dress_goldenrod.png","gender": "female" },
+
+    { "id": "C094", "name": "Dark Bronze Jacket",           "category": "jacket",  "color_hex": "#704214", "image_url": "/static/clothing/placeholder_jacket_bronze.png",  "gender": "unisex" },
+    { "id": "C095", "name": "Sea Green T-Shirt",            "category": "t-shirt", "color_hex": "#2E8B57", "image_url": "/static/clothing/placeholder_tshirt_seagrn.png",  "gender": "unisex" },
+    { "id": "C096", "name": "Mahogany Velvet Blazer",       "category": "blazer",  "color_hex": "#C04000", "image_url": "/static/clothing/placeholder_blazer_mahog.png",   "gender": "unisex" },
+    { "id": "C097", "name": "Forest Green Kurta",           "category": "kurta",   "color_hex": "#4E6E4E", "image_url": "/static/clothing/placeholder_kurta_forest.png",   "gender": "unisex" },
+
+    { "id": "C098", "name": "Navy Blue Silk Saree",         "category": "saree",   "color_hex": "#000080", "image_url": "/static/clothing/placeholder_saree_navy.png",     "gender": "female" },
+    { "id": "C099", "name": "Dark Green Formal Shirt",      "category": "shirt",   "color_hex": "#006400", "image_url": "/static/clothing/placeholder_shirt_dgreen.png",   "gender": "unisex" },
+    { "id": "C100", "name": "Dark Slate Grey Blazer",       "category": "blazer",  "color_hex": "#2F4F4F", "image_url": "/static/clothing/placeholder_blazer_dslate.png",  "gender": "unisex" },
+    { "id": "C101", "name": "Purple Embroidered Kurta",     "category": "kurta",   "color_hex": "#800080", "image_url": "/static/clothing/placeholder_kurta_purple.png",   "gender": "unisex" },
+    { "id": "C102", "name": "Silver Grey T-Shirt",          "category": "t-shirt", "color_hex": "#C0C0C0", "image_url": "/static/clothing/placeholder_tshirt_silver.png",  "gender": "unisex" },
+
+    { "id": "C103", "name": "Chartreuse Casual Shirt",      "category": "shirt",   "color_hex": "#7FFF00", "image_url": "/static/clothing/placeholder_shirt_chartreuse.png","gender": "unisex" },
+    { "id": "C104", "name": "Deep Sky Blue Kurta",          "category": "kurta",   "color_hex": "#00BFFF", "image_url": "/static/clothing/placeholder_kurta_deepskyblue.png","gender": "unisex" },
+    { "id": "C105", "name": "Orange-Red Blazer",            "category": "blazer",  "color_hex": "#FF4500", "image_url": "/static/clothing/placeholder_blazer_orangered.png","gender": "unisex" },
+    { "id": "C106", "name": "Green-Yellow T-Shirt",         "category": "t-shirt", "color_hex": "#ADFF2F", "image_url": "/static/clothing/placeholder_tshirt_greenyellow.png","gender": "unisex" },
+
+    { "id": "C107", "name": "Peach Cotton Kurta",           "category": "kurta",   "color_hex": "#FFCBA4", "image_url": "/static/clothing/placeholder_kurta_peach.png",    "gender": "unisex" },
+    { "id": "C108", "name": "Coral Silk Saree",             "category": "saree",   "color_hex": "#FF8A70", "image_url": "/static/clothing/placeholder_saree_coral.png",    "gender": "female" },
+    { "id": "C109", "name": "Warm Sage Linen Dress",        "category": "dress",   "color_hex": "#9CAF88", "image_url": "/static/clothing/placeholder_dress_wsage.png",    "gender": "female" },
+    { "id": "C110", "name": "Soft Yellow Shirt",            "category": "shirt",   "color_hex": "#F5E6A3", "image_url": "/static/clothing/placeholder_shirt_softyellow.png","gender": "unisex" },
+
+    { "id": "C111", "name": "Rust Cotton Blazer",           "category": "blazer",  "color_hex": "#B7410E", "image_url": "/static/clothing/placeholder_blazer_rust.png",    "gender": "unisex" },
+    { "id": "C112", "name": "Olive Green T-Shirt",          "category": "t-shirt", "color_hex": "#6B8E23", "image_url": "/static/clothing/placeholder_tshirt_olive.png",   "gender": "unisex" },
+    { "id": "C113", "name": "Mustard Yellow Kurta",         "category": "kurta",   "color_hex": "#E1AD01", "image_url": "/static/clothing/placeholder_kurta_mustard.png",  "gender": "unisex" },
+    { "id": "C114", "name": "Warm Brown Trousers",          "category": "pants",   "color_hex": "#7B5B3A", "image_url": "/static/clothing/placeholder_pants_wbrown.png",   "gender": "unisex" },
+
+    { "id": "C115", "name": "Terracotta Saree",             "category": "saree",   "color_hex": "#CB6843", "image_url": "/static/clothing/placeholder_saree_terra.png",    "gender": "female" },
+    { "id": "C116", "name": "Rust Midi Dress",              "category": "dress",   "color_hex": "#C25B28", "image_url": "/static/clothing/placeholder_dress_rust.png",     "gender": "female" },
+    { "id": "C117", "name": "Camel T-Shirt",                "category": "t-shirt", "color_hex": "#C19A6B", "image_url": "/static/clothing/placeholder_tshirt_camel.png",   "gender": "unisex" },
+    { "id": "C118", "name": "Light Steel Blue Kurta",       "category": "kurta",   "color_hex": "#B0C4DE", "image_url": "/static/clothing/placeholder_kurta_lsteel.png",   "gender": "unisex" }
   ]
 }
