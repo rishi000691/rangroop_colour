@@ -1,0 +1,1821 @@
+Processing 41 sample images in batch mode...
+
+[outdoor6.jpg] -> Skin Type: Light, Undertone: Olive (ITA: 44.53, Hue: 68.13)
+[outdoor7.jpg] -> Skin Type: Very Dark, Undertone: Cool (ITA: -59.24, Hue: 31.87)
+[preview_face1.jpg] -> Skin Type: None, Undertone: None (ITA: None, Hue: None)
+[outdoor5.jpg] -> Skin Type: Dark, Undertone: Cool (ITA: -23.55, Hue: 39.49)
+[outdoor4.jpg] -> Skin Type: Light, Undertone: Warm (ITA: 53.16, Hue: 58.23)
+[indoor9.jpg] -> Skin Type: Dark, Undertone: Neutral (ITA: -5.67, Hue: 54.04)
+[outdoor1.jpg] -> Skin Type: Very Light, Undertone: Cool (ITA: 69.74, Hue: 45.17)
+[indoor8.jpg] -> Skin Type: Very Light, Undertone: Warm (ITA: 56.69, Hue: 59.44)
+[outdoor3.jpg] -> Skin Type: Very Light, Undertone: Cool (ITA: 56.52, Hue: 49.42)
+[outdoor2.jpg] -> Skin Type: Intermediate, Undertone: Olive (ITA: 28.83, Hue: 71.45)
+[indoor6.jpg] -> Skin Type: Very Light, Undertone: Olive (ITA: 62.16, Hue: 66.4)
+[friend2.jpg] -> Skin Type: None, Undertone: None (ITA: None, Hue: None)
+[sample_face1.jpg] -> Skin Type: Tan, Undertone: Cool (ITA: 14.41, Hue: 22.96)
+[outdoor13.jpg] -> Skin Type: Very Light, Undertone: Cool (ITA: 77.27, Hue: 30.76)
+[outdoor12.jpg] -> Skin Type: Light, Undertone: Cool (ITA: 45.05, Hue: 31.29)
+[indoor7.jpg] -> Skin Type: Very Light, Undertone: Olive (ITA: 58.88, Hue: 71.6)
+[indoor5.jpg] -> Skin Type: Very Dark, Undertone: Cool (ITA: -87.68, Hue: 348.94)
+[outdoor10.jpg] -> Skin Type: Light, Undertone: Olive (ITA: 50.49, Hue: 67.47)
+[outdoor11.jpg] -> Skin Type: Light, Undertone: Olive (ITA: 53.23, Hue: 68.08)
+[indoor4.jpg] -> Skin Type: Light, Undertone: Cool (ITA: 54.97, Hue: 48.02)
+[outdoor9.jpg] -> Skin Type: Light, Undertone: Cool (ITA: 50.93, Hue: 42.2)
+[outdoor15.jpg] -> Skin Type: Very Light, Undertone: Cool (ITA: 68.52, Hue: 30.12)
+[outdoor8.jpg] -> Skin Type: Very Light, Undertone: Cool (ITA: 83.7, Hue: 310.97)
+[outdoor14.jpg] -> Skin Type: Very Light, Undertone: Cool (ITA: 77.7, Hue: 26.87)
+[indoor1.jpg] -> Skin Type: Dark, Undertone: Cool (ITA: -23.36, Hue: 34.51)
+[indoor3.jpg] -> Skin Type: Light, Undertone: Cool (ITA: 43.39, Hue: 50.71)
+[family_photo.jpg] -> Skin Type: Tan, Undertone: Cool (ITA: 18.67, Hue: 35.92)
+[outdoor16.jpg] -> Skin Type: Intermediate, Undertone: Neutral (ITA: 37.51, Hue: 54.82)
+[outdoor17.jpg] -> Skin Type: Light, Undertone: Warm (ITA: 53.9, Hue: 59.35)
+[indoor2.jpg] -> Skin Type: Very Light, Undertone: Olive (ITA: 60.06, Hue: 64.04)
+[outdoor.jpg] -> Skin Type: Intermediate, Undertone: Warm (ITA: 35.51, Hue: 62.02)
+[indoor.jpg] -> Skin Type: Light, Undertone: Warm (ITA: 47.01, Hue: 58.27)
+[indoor10.jpg] -> Skin Type: Tan, Undertone: Warm (ITA: 26.41, Hue: 60.45)
+[indoor11.jpg] -> Skin Type: Very Light, Undertone: Warm (ITA: 57.76, Hue: 61.62)
+[indoor13.jpg] -> Skin Type: Very Dark, Undertone: Olive (ITA: -38.89, Hue: 66.85)
+[indoor12.jpg] -> Skin Type: Tan, Undertone: Olive (ITA: 19.17, Hue: 67.25)
+[Screenshot 2026-09-22 at 8.51.25 PM.png] -> Skin Type: Light, Undertone: Warm (ITA: 54.37, Hue: 58.86)
+[Screenshot 2026-09-22 at 8.50.46 PM.png] -> Skin Type: Tan, Undertone: Cool (ITA: 14.12, Hue: 46.71)
+[Screenshot 2026-09-22 at 8.51.21 PM.png] -> Skin Type: Very Light, Undertone: Olive (ITA: 59.4, Hue: 69.77)
+[Screenshot 2026-09-22 at 8.50.51 PM.png] -> Skin Type: Tan, Undertone: Neutral (ITA: 18.51, Hue: 52.19)
+[Screenshot 2026-09-22 at 8.51.16 PM.png] -> Skin Type: Very Light, Undertone: Olive (ITA: 64.73, Hue: 75.97)
+
+Complete Batch JSON:
+[
+  {
+    "success": true,
+    "dominant_lab": [
+      69.3,
+      7.87,
+      19.62
+    ],
+    "ita_value": 44.53,
+    "skin_type": "Light",
+    "hue_angle": 68.13,
+    "undertone": "Olive",
+    "undertone_confidence": "high",
+    "illuminant_bias": 1.05,
+    "confidence_notes": "Analyzed 18390 skin pixels across forehead & cheeks. Dominant cluster weight: 46.2%. Luminance Range: 24.1 to 77.8 L*.",
+    "season": "Soft Autumn",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#A0522D"
+    ],
+    "avoid_colors": [
+      "#FF1493",
+      "#00FFFF",
+      "#000000"
+    ],
+    "explanation": "Soft Autumn complexions \u2014 often light-skinned with olive undertones \u2014 have warm but muted coloring with low contrast between hair, skin, and eyes. Earthy, desaturated warm tones like camel, sienna, sage, and cocoa harmonize with the skin's warm mutedness without adding harshness. Bright, electric colors like hot pink and cyan overpower the soft coloring, and stark black creates too much contrast, making the skin look sallow.",
+    "audit": {
+      "low_contrast_removed": [
+        "#C2B280",
+        "#BC8F8F",
+        "#8B7D6B",
+        "#9CAF88",
+        "#C5A880",
+        "#D4A76A",
+        "#967969"
+      ],
+      "recommended_contrast_scores": {
+        "#A0522D": 37.0
+      }
+    },
+    "filename": "outdoor6.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      33.43,
+      15.86,
+      9.86
+    ],
+    "ita_value": -59.24,
+    "skin_type": "Very Dark",
+    "hue_angle": 31.87,
+    "undertone": "Cool",
+    "undertone_confidence": "high",
+    "illuminant_bias": 11.72,
+    "confidence_notes": "Analyzed 19257 skin pixels across forehead & cheeks. Dominant cluster weight: 42.4%. Luminance Range: 24.7 to 67.8 L*.",
+    "season": "Deep Winter",
+    "depth_bucket": "deep",
+    "recommended_colors": [
+      "#000080",
+      "#8B0000",
+      "#006400",
+      "#4B0082",
+      "#2F4F4F",
+      "#800020",
+      "#191970",
+      "#FFFFFF"
+    ],
+    "avoid_colors": [
+      "#FFD700",
+      "#FF8C00",
+      "#F5C6A0"
+    ],
+    "explanation": "Deep Winter complexions have cool undertones at the darkest skin depths \u2014 rich, cool, and dramatic. Bold, deep cool tones \u2014 navy, dark red, dark green, indigo, and burgundy \u2014 harmonize with the skin's inherent depth and coolness while maintaining a striking presence. Warm and light hues like gold, orange, and peach lack the depth to complement the complexion and can appear jarring against the dramatic cool richness of the skin.",
+    "audit": {
+      "recommended_contrast_scores": {
+        "#000080": 83.5,
+        "#8B0000": 47.4,
+        "#006400": 67.4,
+        "#4B0082": 73.8,
+        "#2F4F4F": 30.8,
+        "#800020": 35.8,
+        "#191970": 64.0,
+        "#FFFFFF": 69.1
+      }
+    },
+    "filename": "outdoor7.jpg"
+  },
+  {
+    "error": "NO_FACE_DETECTED",
+    "message": "No face detected in the image. Ensure the face is clear, well-lit, and front-facing.",
+    "filename": "preview_face1.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      44.86,
+      14.33,
+      11.8
+    ],
+    "ita_value": -23.55,
+    "skin_type": "Dark",
+    "hue_angle": 39.49,
+    "undertone": "Cool",
+    "undertone_confidence": "high",
+    "illuminant_bias": 6.24,
+    "confidence_notes": "Analyzed 5334 skin pixels across forehead & cheeks. Dominant cluster weight: 63.1%. Luminance Range: 35.6 to 70.5 L*.",
+    "season": "Deep Winter",
+    "depth_bucket": "deep",
+    "recommended_colors": [
+      "#000080",
+      "#8B0000",
+      "#006400",
+      "#4B0082",
+      "#2F4F4F",
+      "#800020",
+      "#191970",
+      "#FFFFFF"
+    ],
+    "avoid_colors": [
+      "#FFD700",
+      "#FF8C00",
+      "#F5C6A0"
+    ],
+    "explanation": "Deep Winter complexions have cool undertones at the darkest skin depths \u2014 rich, cool, and dramatic. Bold, deep cool tones \u2014 navy, dark red, dark green, indigo, and burgundy \u2014 harmonize with the skin's inherent depth and coolness while maintaining a striking presence. Warm and light hues like gold, orange, and peach lack the depth to complement the complexion and can appear jarring against the dramatic cool richness of the skin.",
+    "audit": {
+      "recommended_contrast_scores": {
+        "#000080": 89.3,
+        "#8B0000": 50.0,
+        "#006400": 65.6,
+        "#4B0082": 78.9,
+        "#2F4F4F": 33.2,
+        "#800020": 40.6,
+        "#191970": 70.1,
+        "#FFFFFF": 58.2
+      }
+    },
+    "filename": "outdoor5.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      78.61,
+      13.27,
+      21.44
+    ],
+    "ita_value": 53.16,
+    "skin_type": "Light",
+    "hue_angle": 58.23,
+    "undertone": "Warm",
+    "undertone_confidence": "medium",
+    "illuminant_bias": 18.54,
+    "confidence_notes": "Analyzed 2050 skin pixels across forehead & cheeks. Dominant cluster weight: 54.4%. Luminance Range: 26.1 to 83.8 L*. \u26a0 Moderate lighting cast detected (scene chroma bias 18.5, da*=-3.2, db*=18.3). Results are likely acceptable, but natural daylight is recommended for best accuracy.",
+    "season": "Light Spring",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#FFD700",
+      "#98D8C8",
+      "#87CEEB",
+      "#FFFDD0",
+      "#C5E17A"
+    ],
+    "avoid_colors": [
+      "#000000",
+      "#36013F",
+      "#800020"
+    ],
+    "explanation": "Light Spring complexions have a warm undertone paired with fair to light skin, giving a delicate, sunlit quality. These palettes emphasize warm yet gentle colors \u2014 soft peach, golden yellow, warm pastels, and light greens \u2014 that echo the warmth in the skin without overwhelming the lightness. Heavy darks like black, deep purple, and burgundy create too stark a contrast and can make the complexion look washed-out or sallow.",
+    "audit": {
+      "low_contrast_removed": [
+        "#F5C6A0",
+        "#F7CAC9",
+        "#E8B87E"
+      ],
+      "recommended_contrast_scores": {
+        "#FFD700": 67.9,
+        "#98D8C8": 42.1,
+        "#87CEEB": 51.1,
+        "#FFFDD0": 28.0,
+        "#C5E17A": 46.6
+      }
+    },
+    "filename": "outdoor4.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      48.59,
+      10.27,
+      14.15
+    ],
+    "ita_value": -5.67,
+    "skin_type": "Dark",
+    "hue_angle": 54.04,
+    "undertone": "Neutral",
+    "undertone_confidence": "high",
+    "illuminant_bias": 8.66,
+    "confidence_notes": "Analyzed 1514 skin pixels across forehead & cheeks. Dominant cluster weight: 38.3%. Luminance Range: 20.0 to 72.8 L*.",
+    "season": "Bright Winter",
+    "depth_bucket": "deep",
+    "recommended_colors": [
+      "#FF0000",
+      "#0000FF",
+      "#FF00FF",
+      "#00FF00",
+      "#FFFFFF",
+      "#FF1493",
+      "#00CED1",
+      "#FFFF00"
+    ],
+    "avoid_colors": [
+      "#8B7D6B",
+      "#D2B48C",
+      "#808080"
+    ],
+    "explanation": "Bright Winter is a high-contrast type \u2014 the placeholder for cool-leaning or neutral-leaning individuals who can carry intense, saturated colors. Vivid primary and jewel tones \u2014 pure red, royal blue, magenta, emerald, and crisp white \u2014 resonate with the complexion's clarity. Muted, warm, or earthy tones like taupe, tan, and medium grey drain the vibrancy and make the skin look flat or muddy.",
+    "audit": {
+      "recommended_contrast_scores": {
+        "#FF0000": 87.8,
+        "#0000FF": 141.1,
+        "#FF00FF": 116.2,
+        "#00FF00": 124.9,
+        "#FFFFFF": 54.3,
+        "#FF1493": 77.2,
+        "#00CED1": 63.3,
+        "#FFFF00": 99.1
+      }
+    },
+    "filename": "indoor9.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      77.26,
+      10.01,
+      10.06
+    ],
+    "ita_value": 69.74,
+    "skin_type": "Very Light",
+    "hue_angle": 45.17,
+    "undertone": "Cool",
+    "undertone_confidence": "high",
+    "illuminant_bias": 6.71,
+    "confidence_notes": "Analyzed 35158 skin pixels across forehead & cheeks. Dominant cluster weight: 66.7%. Luminance Range: 44.5 to 83.9 L*.",
+    "season": "Light Summer",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#B0C4DE",
+      "#DDA0DD",
+      "#E6E6FA",
+      "#C0D6E4",
+      "#ACE1AF"
+    ],
+    "avoid_colors": [
+      "#FF4500",
+      "#FFD700",
+      "#000000"
+    ],
+    "explanation": "Light Summer complexions have a cool undertone with fair, porcelain-like skin depth. Soft, muted cool tones \u2014 powder blue, lavender, soft pink, and celadon \u2014 complement the cool, delicate quality of the skin without adding harshness. Bright warm colors like orange-red and gold clash with the cool undertone, while jet black creates excessive contrast that overpowers the complexion's softness.",
+    "audit": {
+      "low_contrast_removed": [
+        "#FFB6C1",
+        "#D8BFD8",
+        "#F0E0E0"
+      ],
+      "recommended_contrast_scores": {
+        "#B0C4DE": 27.7,
+        "#DDA0DD": 39.4,
+        "#E6E6FA": 25.3,
+        "#C0D6E4": 25.3,
+        "#ACE1AF": 38.5
+      }
+    },
+    "filename": "outdoor1.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      77.88,
+      10.82,
+      18.33
+    ],
+    "ita_value": 56.69,
+    "skin_type": "Very Light",
+    "hue_angle": 59.44,
+    "undertone": "Warm",
+    "undertone_confidence": "high",
+    "illuminant_bias": 9.98,
+    "confidence_notes": "Analyzed 2628 skin pixels across forehead & cheeks. Dominant cluster weight: 42.0%. Luminance Range: 25.3 to 86.6 L*.",
+    "season": "Light Spring",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#FFD700",
+      "#98D8C8",
+      "#87CEEB",
+      "#FFFDD0",
+      "#C5E17A"
+    ],
+    "avoid_colors": [
+      "#000000",
+      "#36013F",
+      "#800020"
+    ],
+    "explanation": "Light Spring complexions have a warm undertone paired with fair to light skin, giving a delicate, sunlit quality. These palettes emphasize warm yet gentle colors \u2014 soft peach, golden yellow, warm pastels, and light greens \u2014 that echo the warmth in the skin without overwhelming the lightness. Heavy darks like black, deep purple, and burgundy create too stark a contrast and can make the complexion look washed-out or sallow.",
+    "audit": {
+      "low_contrast_removed": [
+        "#F5C6A0",
+        "#F7CAC9",
+        "#E8B87E"
+      ],
+      "recommended_contrast_scores": {
+        "#FFD700": 70.6,
+        "#98D8C8": 38.6,
+        "#87CEEB": 47.2,
+        "#FFFDD0": 27.1,
+        "#C5E17A": 46.6
+      }
+    },
+    "filename": "indoor8.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      78.13,
+      15.93,
+      18.6
+    ],
+    "ita_value": 56.52,
+    "skin_type": "Very Light",
+    "hue_angle": 49.42,
+    "undertone": "Cool",
+    "undertone_confidence": "high",
+    "illuminant_bias": 16.02,
+    "confidence_notes": "Analyzed 2264 skin pixels across forehead & cheeks. Dominant cluster weight: 51.2%. Luminance Range: 33.6 to 83.6 L*.",
+    "season": "Light Summer",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#B0C4DE",
+      "#DDA0DD",
+      "#E6E6FA",
+      "#C0D6E4",
+      "#D8BFD8",
+      "#ACE1AF"
+    ],
+    "avoid_colors": [
+      "#FF4500",
+      "#FFD700",
+      "#000000"
+    ],
+    "explanation": "Light Summer complexions have a cool undertone with fair, porcelain-like skin depth. Soft, muted cool tones \u2014 powder blue, lavender, soft pink, and celadon \u2014 complement the cool, delicate quality of the skin without adding harshness. Bright warm colors like orange-red and gold clash with the cool undertone, while jet black creates excessive contrast that overpowers the complexion's softness.",
+    "audit": {
+      "low_contrast_removed": [
+        "#FFB6C1",
+        "#F0E0E0"
+      ],
+      "recommended_contrast_scores": {
+        "#B0C4DE": 37.9,
+        "#DDA0DD": 44.1,
+        "#E6E6FA": 33.7,
+        "#C0D6E4": 35.2,
+        "#D8BFD8": 28.0,
+        "#ACE1AF": 43.1
+      }
+    },
+    "filename": "outdoor3.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      67.02,
+      10.38,
+      30.93
+    ],
+    "ita_value": 28.83,
+    "skin_type": "Intermediate",
+    "hue_angle": 71.45,
+    "undertone": "Olive",
+    "undertone_confidence": "high",
+    "illuminant_bias": 8.02,
+    "confidence_notes": "Analyzed 6325 skin pixels across forehead & cheeks. Dominant cluster weight: 42.9%. Luminance Range: 47.9 to 78.5 L*.",
+    "season": "True Autumn",
+    "depth_bucket": "medium",
+    "recommended_colors": [
+      "#D2691E",
+      "#B8860B",
+      "#8B4513",
+      "#556B2F",
+      "#CC5500",
+      "#DAA520",
+      "#A0522D"
+    ],
+    "avoid_colors": [
+      "#FF69B4",
+      "#E6E6FA",
+      "#87CEEB"
+    ],
+    "explanation": "True Autumn (Warm Autumn) skin has a distinctly warm, olive or golden undertone at medium depth. Rich, earthy warm tones \u2014 chocolate, burnt orange, goldenrod, olive green, and sienna \u2014 amplify the skin's natural warmth and create a rich, grounded look. Cool, light, or pastel shades like lavender, light sky blue, and hot pink conflict with the warm undertone and can make the complexion appear greenish or ashy.",
+    "audit": {
+      "low_contrast_removed": [
+        "#CD853F"
+      ],
+      "recommended_contrast_scores": {
+        "#D2691E": 38.7,
+        "#B8860B": 32.7,
+        "#8B4513": 35.1,
+        "#556B2F": 38.3,
+        "#CC5500": 47.8,
+        "#DAA520": 38.1,
+        "#A0522D": 30.3
+      }
+    },
+    "filename": "outdoor2.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      84.6,
+      7.99,
+      18.28
+    ],
+    "ita_value": 62.16,
+    "skin_type": "Very Light",
+    "hue_angle": 66.4,
+    "undertone": "Olive",
+    "undertone_confidence": "high",
+    "illuminant_bias": 6.17,
+    "confidence_notes": "Analyzed 1659 skin pixels across forehead & cheeks. Dominant cluster weight: 46.7%. Luminance Range: 20.0 to 92.0 L*.",
+    "season": "Soft Autumn",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#BC8F8F",
+      "#8B7D6B",
+      "#A0522D",
+      "#9CAF88",
+      "#967969"
+    ],
+    "avoid_colors": [
+      "#FF1493",
+      "#00FFFF",
+      "#000000"
+    ],
+    "explanation": "Soft Autumn complexions \u2014 often light-skinned with olive undertones \u2014 have warm but muted coloring with low contrast between hair, skin, and eyes. Earthy, desaturated warm tones like camel, sienna, sage, and cocoa harmonize with the skin's warm mutedness without adding harshness. Bright, electric colors like hot pink and cyan overpower the soft coloring, and stark black creates too much contrast, making the skin look sallow.",
+    "audit": {
+      "low_contrast_removed": [
+        "#C2B280",
+        "#C5A880",
+        "#D4A76A"
+      ],
+      "recommended_contrast_scores": {
+        "#BC8F8F": 25.7,
+        "#8B7D6B": 32.6,
+        "#A0522D": 49.2,
+        "#9CAF88": 26.7,
+        "#967969": 31.9
+      }
+    },
+    "filename": "indoor6.jpg"
+  },
+  {
+    "error": "NO_FACE_DETECTED",
+    "message": "No face detected in the image. Ensure the face is clear, well-lit, and front-facing.",
+    "filename": "friend2.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      54.99,
+      45.86,
+      19.43
+    ],
+    "ita_value": 14.41,
+    "skin_type": "Tan",
+    "hue_angle": 22.96,
+    "undertone": "Cool",
+    "undertone_confidence": "low",
+    "illuminant_bias": 34.78,
+    "confidence_notes": "Analyzed 5521 skin pixels across forehead & cheeks. Dominant cluster weight: 37.6%. Luminance Range: 40.3 to 81.8 L*. \u26a0 Strong lighting cast detected (scene chroma bias 34.8, da*=32.9, db*=11.4). Undertone result may be unreliable \u2014 retake photo in natural daylight.",
+    "season": "True Summer",
+    "depth_bucket": "medium",
+    "recommended_colors": [
+      "#4682B4",
+      "#BC8F8F",
+      "#6B8E9B",
+      "#708090",
+      "#9370DB",
+      "#5F9EA0",
+      "#D2B48C"
+    ],
+    "avoid_colors": [
+      "#FF8C00",
+      "#FFD700",
+      "#FF0000"
+    ],
+    "explanation": "True Summer (Cool Summer) skin has a definitively cool, pink or blue undertone at medium depth. The palette centers on cool, muted, mid-value hues \u2014 steel blue, dusty rose, medium purple, and slate grey \u2014 that mirror the skin's natural cool softness. Highly saturated warm colors like orange, gold, and bright red create a jarring discord with the cool undertone and can make the skin look ruddy or flushed.",
+    "audit": {
+      "low_contrast_removed": [
+        "#C08081"
+      ],
+      "recommended_contrast_scores": {
+        "#4682B4": 71.9,
+        "#BC8F8F": 32.7,
+        "#6B8E9B": 62.6,
+        "#708090": 56.6,
+        "#9370DB": 70.1,
+        "#5F9EA0": 71.1,
+        "#D2B48C": 45.7
+      }
+    },
+    "filename": "sample_face1.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      76.69,
+      10.13,
+      6.03
+    ],
+    "ita_value": 77.27,
+    "skin_type": "Very Light",
+    "hue_angle": 30.76,
+    "undertone": "Cool",
+    "undertone_confidence": "high",
+    "illuminant_bias": 8.35,
+    "confidence_notes": "Analyzed 24748 skin pixels across forehead & cheeks. Dominant cluster weight: 45.8%. Luminance Range: 43.8 to 80.9 L*.",
+    "season": "Light Summer",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#DDA0DD",
+      "#ACE1AF"
+    ],
+    "avoid_colors": [
+      "#FF4500",
+      "#FFD700",
+      "#000000"
+    ],
+    "explanation": "Light Summer complexions have a cool undertone with fair, porcelain-like skin depth. Soft, muted cool tones \u2014 powder blue, lavender, soft pink, and celadon \u2014 complement the cool, delicate quality of the skin without adding harshness. Bright warm colors like orange-red and gold clash with the cool undertone, while jet black creates excessive contrast that overpowers the complexion's softness.",
+    "audit": {
+      "low_contrast_removed": [
+        "#B0C4DE",
+        "#FFB6C1",
+        "#E6E6FA",
+        "#C0D6E4",
+        "#D8BFD8",
+        "#F0E0E0"
+      ],
+      "recommended_contrast_scores": {
+        "#DDA0DD": 36.0,
+        "#ACE1AF": 39.8
+      }
+    },
+    "filename": "outdoor13.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      55.24,
+      8.61,
+      5.23
+    ],
+    "ita_value": 45.05,
+    "skin_type": "Light",
+    "hue_angle": 31.29,
+    "undertone": "Cool",
+    "undertone_confidence": "high",
+    "illuminant_bias": 2.17,
+    "confidence_notes": "Analyzed 21110 skin pixels across forehead & cheeks. Dominant cluster weight: 65.2%. Luminance Range: 34.3 to 83.2 L*.",
+    "season": "Light Summer",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#B0C4DE",
+      "#DDA0DD",
+      "#FFB6C1",
+      "#E6E6FA",
+      "#C0D6E4",
+      "#D8BFD8",
+      "#ACE1AF",
+      "#F0E0E0"
+    ],
+    "avoid_colors": [
+      "#FF4500",
+      "#FFD700",
+      "#000000"
+    ],
+    "explanation": "Light Summer complexions have a cool undertone with fair, porcelain-like skin depth. Soft, muted cool tones \u2014 powder blue, lavender, soft pink, and celadon \u2014 complement the cool, delicate quality of the skin without adding harshness. Bright warm colors like orange-red and gold clash with the cool undertone, while jet black creates excessive contrast that overpowers the complexion's softness.",
+    "audit": {
+      "recommended_contrast_scores": {
+        "#B0C4DE": 32.5,
+        "#DDA0DD": 40.5,
+        "#FFB6C1": 32.3,
+        "#E6E6FA": 39.8,
+        "#C0D6E4": 35.2,
+        "#D8BFD8": 29.1,
+        "#ACE1AF": 48.1,
+        "#F0E0E0": 35.5
+      }
+    },
+    "filename": "outdoor12.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      85.62,
+      7.15,
+      21.51
+    ],
+    "ita_value": 58.88,
+    "skin_type": "Very Light",
+    "hue_angle": 71.6,
+    "undertone": "Olive",
+    "undertone_confidence": "high",
+    "illuminant_bias": 9.99,
+    "confidence_notes": "Analyzed 2321 skin pixels across forehead & cheeks. Dominant cluster weight: 45.8%. Luminance Range: 42.7 to 92.0 L*.",
+    "season": "Soft Autumn",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#BC8F8F",
+      "#8B7D6B",
+      "#A0522D",
+      "#9CAF88",
+      "#967969"
+    ],
+    "avoid_colors": [
+      "#FF1493",
+      "#00FFFF",
+      "#000000"
+    ],
+    "explanation": "Soft Autumn complexions \u2014 often light-skinned with olive undertones \u2014 have warm but muted coloring with low contrast between hair, skin, and eyes. Earthy, desaturated warm tones like camel, sienna, sage, and cocoa harmonize with the skin's warm mutedness without adding harshness. Bright, electric colors like hot pink and cyan overpower the soft coloring, and stark black creates too much contrast, making the skin look sallow.",
+    "audit": {
+      "low_contrast_removed": [
+        "#C2B280",
+        "#C5A880",
+        "#D4A76A"
+      ],
+      "recommended_contrast_scores": {
+        "#BC8F8F": 28.4,
+        "#8B7D6B": 34.2,
+        "#A0522D": 49.4,
+        "#9CAF88": 26.9,
+        "#967969": 33.6
+      }
+    },
+    "filename": "indoor7.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      84.75,
+      7.21,
+      -1.41
+    ],
+    "ita_value": -87.68,
+    "skin_type": "Very Dark",
+    "hue_angle": 348.94,
+    "undertone": "Cool",
+    "undertone_confidence": "high",
+    "illuminant_bias": 2.7,
+    "confidence_notes": "Analyzed 193522 skin pixels across forehead & cheeks. Dominant cluster weight: 58.9%. Luminance Range: 49.7 to 88.3 L*.",
+    "season": "Deep Winter",
+    "depth_bucket": "deep",
+    "recommended_colors": [
+      "#000080",
+      "#8B0000",
+      "#006400",
+      "#4B0082",
+      "#2F4F4F",
+      "#800020",
+      "#191970"
+    ],
+    "avoid_colors": [
+      "#FFD700",
+      "#FF8C00",
+      "#F5C6A0"
+    ],
+    "explanation": "Deep Winter complexions have cool undertones at the darkest skin depths \u2014 rich, cool, and dramatic. Bold, deep cool tones \u2014 navy, dark red, dark green, indigo, and burgundy \u2014 harmonize with the skin's inherent depth and coolness while maintaining a striking presence. Warm and light hues like gold, orange, and peach lack the depth to complement the complexion and can appear jarring against the dramatic cool richness of the skin.",
+    "audit": {
+      "low_contrast_removed": [
+        "#FFFFFF"
+      ],
+      "recommended_contrast_scores": {
+        "#000080": 103.8,
+        "#8B0000": 83.4,
+        "#006400": 82.4,
+        "#4B0082": 93.8,
+        "#2F4F4F": 56.8,
+        "#800020": 75.6,
+        "#191970": 87.6
+      }
+    },
+    "filename": "indoor5.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      82.11,
+      10.98,
+      26.48
+    ],
+    "ita_value": 50.49,
+    "skin_type": "Light",
+    "hue_angle": 67.47,
+    "undertone": "Olive",
+    "undertone_confidence": "medium",
+    "illuminant_bias": 21.16,
+    "confidence_notes": "Analyzed 3624 skin pixels across forehead & cheeks. Dominant cluster weight: 50.4%. Luminance Range: 20.0 to 89.5 L*. \u26a0 Moderate lighting cast detected (scene chroma bias 21.2, da*=14.5, db*=15.4). Results are likely acceptable, but natural daylight is recommended for best accuracy.",
+    "season": "Soft Autumn",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#BC8F8F",
+      "#8B7D6B",
+      "#A0522D",
+      "#9CAF88",
+      "#967969"
+    ],
+    "avoid_colors": [
+      "#FF1493",
+      "#00FFFF",
+      "#000000"
+    ],
+    "explanation": "Soft Autumn complexions \u2014 often light-skinned with olive undertones \u2014 have warm but muted coloring with low contrast between hair, skin, and eyes. Earthy, desaturated warm tones like camel, sienna, sage, and cocoa harmonize with the skin's warm mutedness without adding harshness. Bright, electric colors like hot pink and cyan overpower the soft coloring, and stark black creates too much contrast, making the skin look sallow.",
+    "audit": {
+      "low_contrast_removed": [
+        "#C2B280",
+        "#C5A880",
+        "#D4A76A"
+      ],
+      "recommended_contrast_scores": {
+        "#BC8F8F": 27.8,
+        "#8B7D6B": 33.6,
+        "#A0522D": 43.5,
+        "#9CAF88": 29.2,
+        "#967969": 32.0
+      }
+    },
+    "filename": "outdoor10.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      81.14,
+      9.36,
+      23.26
+    ],
+    "ita_value": 53.23,
+    "skin_type": "Light",
+    "hue_angle": 68.08,
+    "undertone": "Olive",
+    "undertone_confidence": "high",
+    "illuminant_bias": 14.0,
+    "confidence_notes": "Analyzed 3406 skin pixels across forehead & cheeks. Dominant cluster weight: 57.9%. Luminance Range: 26.4 to 85.8 L*.",
+    "season": "Soft Autumn",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#BC8F8F",
+      "#8B7D6B",
+      "#A0522D",
+      "#9CAF88",
+      "#967969"
+    ],
+    "avoid_colors": [
+      "#FF1493",
+      "#00FFFF",
+      "#000000"
+    ],
+    "explanation": "Soft Autumn complexions \u2014 often light-skinned with olive undertones \u2014 have warm but muted coloring with low contrast between hair, skin, and eyes. Earthy, desaturated warm tones like camel, sienna, sage, and cocoa harmonize with the skin's warm mutedness without adding harshness. Bright, electric colors like hot pink and cyan overpower the soft coloring, and stark black creates too much contrast, making the skin look sallow.",
+    "audit": {
+      "low_contrast_removed": [
+        "#C2B280",
+        "#C5A880",
+        "#D4A76A"
+      ],
+      "recommended_contrast_scores": {
+        "#BC8F8F": 25.4,
+        "#8B7D6B": 31.0,
+        "#A0522D": 44.1,
+        "#9CAF88": 26.6,
+        "#967969": 29.8
+      }
+    },
+    "filename": "outdoor11.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      74.63,
+      15.53,
+      17.26
+    ],
+    "ita_value": 54.97,
+    "skin_type": "Light",
+    "hue_angle": 48.02,
+    "undertone": "Cool",
+    "undertone_confidence": "high",
+    "illuminant_bias": 8.96,
+    "confidence_notes": "Analyzed 16576 skin pixels across forehead & cheeks. Dominant cluster weight: 40.5%. Luminance Range: 20.5 to 83.6 L*.",
+    "season": "Light Summer",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#B0C4DE",
+      "#DDA0DD",
+      "#E6E6FA",
+      "#C0D6E4",
+      "#D8BFD8",
+      "#ACE1AF"
+    ],
+    "avoid_colors": [
+      "#FF4500",
+      "#FFD700",
+      "#000000"
+    ],
+    "explanation": "Light Summer complexions have a cool undertone with fair, porcelain-like skin depth. Soft, muted cool tones \u2014 powder blue, lavender, soft pink, and celadon \u2014 complement the cool, delicate quality of the skin without adding harshness. Bright warm colors like orange-red and gold clash with the cool undertone, while jet black creates excessive contrast that overpowers the complexion's softness.",
+    "audit": {
+      "low_contrast_removed": [
+        "#FFB6C1",
+        "#F0E0E0"
+      ],
+      "recommended_contrast_scores": {
+        "#B0C4DE": 36.8,
+        "#DDA0DD": 42.8,
+        "#E6E6FA": 34.1,
+        "#C0D6E4": 34.7,
+        "#D8BFD8": 27.1,
+        "#ACE1AF": 43.4
+      }
+    },
+    "filename": "indoor4.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      61.99,
+      10.74,
+      9.73
+    ],
+    "ita_value": 50.93,
+    "skin_type": "Light",
+    "hue_angle": 42.2,
+    "undertone": "Cool",
+    "undertone_confidence": "high",
+    "illuminant_bias": 15.17,
+    "confidence_notes": "Analyzed 47754 skin pixels across forehead & cheeks. Dominant cluster weight: 49.3%. Luminance Range: 20.0 to 71.5 L*.",
+    "season": "Light Summer",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#B0C4DE",
+      "#DDA0DD",
+      "#FFB6C1",
+      "#E6E6FA",
+      "#C0D6E4",
+      "#D8BFD8",
+      "#ACE1AF",
+      "#F0E0E0"
+    ],
+    "avoid_colors": [
+      "#FF4500",
+      "#FFD700",
+      "#000000"
+    ],
+    "explanation": "Light Summer complexions have a cool undertone with fair, porcelain-like skin depth. Soft, muted cool tones \u2014 powder blue, lavender, soft pink, and celadon \u2014 complement the cool, delicate quality of the skin without adding harshness. Bright warm colors like orange-red and gold clash with the cool undertone, while jet black creates excessive contrast that overpowers the complexion's softness.",
+    "audit": {
+      "recommended_contrast_scores": {
+        "#B0C4DE": 32.2,
+        "#DDA0DD": 40.1,
+        "#FFB6C1": 26.1,
+        "#E6E6FA": 36.3,
+        "#C0D6E4": 33.2,
+        "#D8BFD8": 26.3,
+        "#ACE1AF": 44.8,
+        "#F0E0E0": 29.9
+      }
+    },
+    "filename": "outdoor9.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      68.61,
+      12.62,
+      7.32
+    ],
+    "ita_value": 68.52,
+    "skin_type": "Very Light",
+    "hue_angle": 30.12,
+    "undertone": "Cool",
+    "undertone_confidence": "high",
+    "illuminant_bias": 4.15,
+    "confidence_notes": "Analyzed 18685 skin pixels across forehead & cheeks. Dominant cluster weight: 38.1%. Luminance Range: 20.0 to 77.7 L*.",
+    "season": "Light Summer",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#B0C4DE",
+      "#DDA0DD",
+      "#E6E6FA",
+      "#C0D6E4",
+      "#ACE1AF"
+    ],
+    "avoid_colors": [
+      "#FF4500",
+      "#FFD700",
+      "#000000"
+    ],
+    "explanation": "Light Summer complexions have a cool undertone with fair, porcelain-like skin depth. Soft, muted cool tones \u2014 powder blue, lavender, soft pink, and celadon \u2014 complement the cool, delicate quality of the skin without adding harshness. Bright warm colors like orange-red and gold clash with the cool undertone, while jet black creates excessive contrast that overpowers the complexion's softness.",
+    "audit": {
+      "low_contrast_removed": [
+        "#FFB6C1",
+        "#D8BFD8",
+        "#F0E0E0"
+      ],
+      "recommended_contrast_scores": {
+        "#B0C4DE": 28.2,
+        "#DDA0DD": 35.7,
+        "#E6E6FA": 30.1,
+        "#C0D6E4": 28.7,
+        "#ACE1AF": 44.1
+      }
+    },
+    "filename": "outdoor15.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      26.51,
+      2.25,
+      -2.59
+    ],
+    "ita_value": 83.7,
+    "skin_type": "Very Light",
+    "hue_angle": 310.97,
+    "undertone": "Cool",
+    "undertone_confidence": "high",
+    "illuminant_bias": 3.95,
+    "confidence_notes": "Analyzed 15664 skin pixels across forehead & cheeks. Dominant cluster weight: 51.1%. Luminance Range: 21.0 to 67.1 L*.",
+    "season": "Light Summer",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#B0C4DE",
+      "#DDA0DD",
+      "#FFB6C1",
+      "#E6E6FA",
+      "#C0D6E4",
+      "#D8BFD8",
+      "#ACE1AF",
+      "#F0E0E0"
+    ],
+    "avoid_colors": [
+      "#FF4500",
+      "#FFD700",
+      "#000000"
+    ],
+    "explanation": "Light Summer complexions have a cool undertone with fair, porcelain-like skin depth. Soft, muted cool tones \u2014 powder blue, lavender, soft pink, and celadon \u2014 complement the cool, delicate quality of the skin without adding harshness. Bright warm colors like orange-red and gold clash with the cool undertone, while jet black creates excessive contrast that overpowers the complexion's softness.",
+    "audit": {
+      "recommended_contrast_scores": {
+        "#B0C4DE": 53.6,
+        "#DDA0DD": 59.1,
+        "#FFB6C1": 60.8,
+        "#E6E6FA": 65.7,
+        "#C0D6E4": 58.7,
+        "#D8BFD8": 55.1,
+        "#ACE1AF": 68.6,
+        "#F0E0E0": 64.2
+      }
+    },
+    "filename": "outdoor8.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      74.55,
+      10.57,
+      5.35
+    ],
+    "ita_value": 77.7,
+    "skin_type": "Very Light",
+    "hue_angle": 26.87,
+    "undertone": "Cool",
+    "undertone_confidence": "high",
+    "illuminant_bias": 5.79,
+    "confidence_notes": "Analyzed 26982 skin pixels across forehead & cheeks. Dominant cluster weight: 41.7%. Luminance Range: 40.5 to 79.6 L*.",
+    "season": "Light Summer",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#DDA0DD",
+      "#ACE1AF"
+    ],
+    "avoid_colors": [
+      "#FF4500",
+      "#FFD700",
+      "#000000"
+    ],
+    "explanation": "Light Summer complexions have a cool undertone with fair, porcelain-like skin depth. Soft, muted cool tones \u2014 powder blue, lavender, soft pink, and celadon \u2014 complement the cool, delicate quality of the skin without adding harshness. Bright warm colors like orange-red and gold clash with the cool undertone, while jet black creates excessive contrast that overpowers the complexion's softness.",
+    "audit": {
+      "low_contrast_removed": [
+        "#B0C4DE",
+        "#FFB6C1",
+        "#E6E6FA",
+        "#C0D6E4",
+        "#D8BFD8",
+        "#F0E0E0"
+      ],
+      "recommended_contrast_scores": {
+        "#DDA0DD": 35.1,
+        "#ACE1AF": 41.0
+      }
+    },
+    "filename": "outdoor14.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      46.64,
+      11.32,
+      7.78
+    ],
+    "ita_value": -23.36,
+    "skin_type": "Dark",
+    "hue_angle": 34.51,
+    "undertone": "Cool",
+    "undertone_confidence": "medium",
+    "illuminant_bias": 23.44,
+    "confidence_notes": "Analyzed 2418 skin pixels across forehead & cheeks. Dominant cluster weight: 41.6%. Luminance Range: 20.0 to 67.2 L*. \u26a0 Moderate lighting cast detected (scene chroma bias 23.4, da*=-9.0, db*=-21.6). Results are likely acceptable, but natural daylight is recommended for best accuracy.",
+    "season": "Deep Winter",
+    "depth_bucket": "deep",
+    "recommended_colors": [
+      "#000080",
+      "#8B0000",
+      "#006400",
+      "#4B0082",
+      "#2F4F4F",
+      "#800020",
+      "#191970",
+      "#FFFFFF"
+    ],
+    "avoid_colors": [
+      "#FFD700",
+      "#FF8C00",
+      "#F5C6A0"
+    ],
+    "explanation": "Deep Winter complexions have cool undertones at the darkest skin depths \u2014 rich, cool, and dramatic. Bold, deep cool tones \u2014 navy, dark red, dark green, indigo, and burgundy \u2014 harmonize with the skin's inherent depth and coolness while maintaining a striking presence. Warm and light hues like gold, orange, and peach lack the depth to complement the complexion and can appear jarring against the dramatic cool richness of the skin.",
+    "audit": {
+      "recommended_contrast_scores": {
+        "#000080": 87.7,
+        "#8B0000": 55.2,
+        "#006400": 65.3,
+        "#4B0082": 77.8,
+        "#2F4F4F": 30.0,
+        "#800020": 45.0,
+        "#191970": 68.2,
+        "#FFFFFF": 55.1
+      }
+    },
+    "filename": "indoor1.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      63.58,
+      11.75,
+      14.37
+    ],
+    "ita_value": 43.39,
+    "skin_type": "Light",
+    "hue_angle": 50.71,
+    "undertone": "Cool",
+    "undertone_confidence": "high",
+    "illuminant_bias": 9.06,
+    "confidence_notes": "Analyzed 23682 skin pixels across forehead & cheeks. Dominant cluster weight: 47.2%. Luminance Range: 22.2 to 69.4 L*.",
+    "season": "Light Summer",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#B0C4DE",
+      "#DDA0DD",
+      "#FFB6C1",
+      "#E6E6FA",
+      "#C0D6E4",
+      "#D8BFD8",
+      "#ACE1AF",
+      "#F0E0E0"
+    ],
+    "avoid_colors": [
+      "#FF4500",
+      "#FFD700",
+      "#000000"
+    ],
+    "explanation": "Light Summer complexions have a cool undertone with fair, porcelain-like skin depth. Soft, muted cool tones \u2014 powder blue, lavender, soft pink, and celadon \u2014 complement the cool, delicate quality of the skin without adding harshness. Bright warm colors like orange-red and gold clash with the cool undertone, while jet black creates excessive contrast that overpowers the complexion's softness.",
+    "audit": {
+      "recommended_contrast_scores": {
+        "#B0C4DE": 35.6,
+        "#DDA0DD": 43.0,
+        "#FFB6C1": 25.6,
+        "#E6E6FA": 37.9,
+        "#C0D6E4": 35.5,
+        "#D8BFD8": 28.8,
+        "#ACE1AF": 44.1,
+        "#F0E0E0": 30.2
+      }
+    },
+    "filename": "indoor3.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      53.79,
+      15.5,
+      11.23
+    ],
+    "ita_value": 18.67,
+    "skin_type": "Tan",
+    "hue_angle": 35.92,
+    "undertone": "Cool",
+    "undertone_confidence": "high",
+    "illuminant_bias": 2.03,
+    "confidence_notes": "Analyzed 4997 skin pixels across forehead & cheeks. Dominant cluster weight: 44.7%. Luminance Range: 26.3 to 83.5 L*.",
+    "season": "True Summer",
+    "depth_bucket": "medium",
+    "recommended_colors": [
+      "#4682B4",
+      "#6B8E9B",
+      "#708090",
+      "#9370DB",
+      "#5F9EA0",
+      "#D2B48C"
+    ],
+    "avoid_colors": [
+      "#FF8C00",
+      "#FFD700",
+      "#FF0000"
+    ],
+    "explanation": "True Summer (Cool Summer) skin has a definitively cool, pink or blue undertone at medium depth. The palette centers on cool, muted, mid-value hues \u2014 steel blue, dusty rose, medium purple, and slate grey \u2014 that mirror the skin's natural cool softness. Highly saturated warm colors like orange, gold, and bright red create a jarring discord with the cool undertone and can make the skin look ruddy or flushed.",
+    "audit": {
+      "low_contrast_removed": [
+        "#BC8F8F",
+        "#C08081"
+      ],
+      "recommended_contrast_scores": {
+        "#4682B4": 47.6,
+        "#6B8E9B": 33.1,
+        "#708090": 28.1,
+        "#9370DB": 64.9,
+        "#5F9EA0": 40.5,
+        "#D2B48C": 27.1
+      }
+    },
+    "filename": "family_photo.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      60.92,
+      10.02,
+      14.22
+    ],
+    "ita_value": 37.51,
+    "skin_type": "Intermediate",
+    "hue_angle": 54.82,
+    "undertone": "Neutral",
+    "undertone_confidence": "high",
+    "illuminant_bias": 1.08,
+    "confidence_notes": "Analyzed 2449 skin pixels across forehead & cheeks. Dominant cluster weight: 52.8%. Luminance Range: 41.7 to 87.1 L*.",
+    "season": "Soft Summer",
+    "depth_bucket": "medium",
+    "recommended_colors": [
+      "#778899",
+      "#8FBC8F",
+      "#9DB4C0",
+      "#B8A9C9",
+      "#7A9A7E"
+    ],
+    "avoid_colors": [
+      "#FF1493",
+      "#FF4500",
+      "#FFFF00"
+    ],
+    "explanation": "Soft Summer complexions are medium-depth with a neutral undertone that leans slightly cool. They have low contrast and a muted, smoky quality. The palette emphasizes dusty, greyed, and softened tones \u2014 sage green, dusty mauve, greige, and muted lilac \u2014 that blend with the skin's natural subtlety. Vivid, electric, or neon colors like hot pink, orange-red, and bright yellow overwhelm the complexion and make it look faded by comparison.",
+    "audit": {
+      "low_contrast_removed": [
+        "#C4AEAD",
+        "#A09B8C",
+        "#8B8589"
+      ],
+      "recommended_contrast_scores": {
+        "#778899": 28.6,
+        "#8FBC8F": 35.8,
+        "#9DB4C0": 29.7,
+        "#B8A9C9": 30.4,
+        "#7A9A7E": 27.1
+      }
+    },
+    "filename": "outdoor16.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      69.01,
+      8.21,
+      13.86
+    ],
+    "ita_value": 53.9,
+    "skin_type": "Light",
+    "hue_angle": 59.35,
+    "undertone": "Warm",
+    "undertone_confidence": "high",
+    "illuminant_bias": 5.24,
+    "confidence_notes": "Analyzed 2327 skin pixels across forehead & cheeks. Dominant cluster weight: 49.8%. Luminance Range: 41.5 to 75.0 L*.",
+    "season": "Light Spring",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#FFD700",
+      "#98D8C8",
+      "#87CEEB",
+      "#FFFDD0",
+      "#C5E17A"
+    ],
+    "avoid_colors": [
+      "#000000",
+      "#36013F",
+      "#800020"
+    ],
+    "explanation": "Light Spring complexions have a warm undertone paired with fair to light skin, giving a delicate, sunlit quality. These palettes emphasize warm yet gentle colors \u2014 soft peach, golden yellow, warm pastels, and light greens \u2014 that echo the warmth in the skin without overwhelming the lightness. Heavy darks like black, deep purple, and burgundy create too stark a contrast and can make the complexion look washed-out or sallow.",
+    "audit": {
+      "low_contrast_removed": [
+        "#F5C6A0",
+        "#F7CAC9",
+        "#E8B87E"
+      ],
+      "recommended_contrast_scores": {
+        "#FFD700": 76.1,
+        "#98D8C8": 36.5,
+        "#87CEEB": 43.2,
+        "#FFFDD0": 33.9,
+        "#C5E17A": 49.9
+      }
+    },
+    "filename": "outdoor17.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      80.61,
+      8.59,
+      17.63
+    ],
+    "ita_value": 60.06,
+    "skin_type": "Very Light",
+    "hue_angle": 64.04,
+    "undertone": "Olive",
+    "undertone_confidence": "high",
+    "illuminant_bias": 5.2,
+    "confidence_notes": "Analyzed 6519 skin pixels across forehead & cheeks. Dominant cluster weight: 45.2%. Luminance Range: 41.2 to 86.6 L*.",
+    "season": "Soft Autumn",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#8B7D6B",
+      "#A0522D",
+      "#9CAF88",
+      "#967969"
+    ],
+    "avoid_colors": [
+      "#FF1493",
+      "#00FFFF",
+      "#000000"
+    ],
+    "explanation": "Soft Autumn complexions \u2014 often light-skinned with olive undertones \u2014 have warm but muted coloring with low contrast between hair, skin, and eyes. Earthy, desaturated warm tones like camel, sienna, sage, and cocoa harmonize with the skin's warm mutedness without adding harshness. Bright, electric colors like hot pink and cyan overpower the soft coloring, and stark black creates too much contrast, making the skin look sallow.",
+    "audit": {
+      "low_contrast_removed": [
+        "#C2B280",
+        "#BC8F8F",
+        "#C5A880",
+        "#D4A76A"
+      ],
+      "recommended_contrast_scores": {
+        "#8B7D6B": 28.7,
+        "#A0522D": 45.9,
+        "#9CAF88": 25.1,
+        "#967969": 27.8
+      }
+    },
+    "filename": "indoor2.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      64.62,
+      10.88,
+      20.49
+    ],
+    "ita_value": 35.51,
+    "skin_type": "Intermediate",
+    "hue_angle": 62.02,
+    "undertone": "Warm",
+    "undertone_confidence": "high",
+    "illuminant_bias": 15.63,
+    "confidence_notes": "Analyzed 4535 skin pixels across forehead & cheeks. Dominant cluster weight: 58.8%. Luminance Range: 20.0 to 77.5 L*.",
+    "season": "True Spring",
+    "depth_bucket": "medium",
+    "recommended_colors": [
+      "#FF6347",
+      "#FF8C00",
+      "#FFD700",
+      "#32CD32",
+      "#40E0D0",
+      "#FF7F50",
+      "#F0E68C",
+      "#E2725B"
+    ],
+    "avoid_colors": [
+      "#000000",
+      "#808080",
+      "#C8A2C8"
+    ],
+    "explanation": "True Spring (also called Warm Spring) skin has a distinctly warm, golden undertone at medium depth, with visible warmth in the cheeks. Saturated warm hues \u2014 coral, tomato red, golden yellow, turquoise, and lime green \u2014 harmonize with the skin's natural warmth and create a vibrant, healthy glow. Cool muted tones like lilac, flat grey, and stark black fight against the inherent warmth, making the complexion appear dull or yellowed.",
+    "audit": {
+      "recommended_contrast_scores": {
+        "#FF6347": 53.7,
+        "#FF8C00": 61.0,
+        "#FFD700": 71.4,
+        "#32CD32": 88.5,
+        "#40E0D0": 62.4,
+        "#FF7F50": 43.9,
+        "#F0E68C": 40.7,
+        "#E2725B": 33.3
+      }
+    },
+    "filename": "outdoor.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      67.09,
+      9.85,
+      15.93
+    ],
+    "ita_value": 47.01,
+    "skin_type": "Light",
+    "hue_angle": 58.27,
+    "undertone": "Warm",
+    "undertone_confidence": "medium",
+    "illuminant_bias": 20.25,
+    "confidence_notes": "Analyzed 71280 skin pixels across forehead & cheeks. Dominant cluster weight: 50.0%. Luminance Range: 26.1 to 74.2 L*. \u26a0 Moderate lighting cast detected (scene chroma bias 20.3, da*=-11.9, db*=16.4). Results are likely acceptable, but natural daylight is recommended for best accuracy.",
+    "season": "Light Spring",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#FFD700",
+      "#98D8C8",
+      "#87CEEB",
+      "#FFFDD0",
+      "#C5E17A"
+    ],
+    "avoid_colors": [
+      "#000000",
+      "#36013F",
+      "#800020"
+    ],
+    "explanation": "Light Spring complexions have a warm undertone paired with fair to light skin, giving a delicate, sunlit quality. These palettes emphasize warm yet gentle colors \u2014 soft peach, golden yellow, warm pastels, and light greens \u2014 that echo the warmth in the skin without overwhelming the lightness. Heavy darks like black, deep purple, and burgundy create too stark a contrast and can make the complexion look washed-out or sallow.",
+    "audit": {
+      "low_contrast_removed": [
+        "#F5C6A0",
+        "#F7CAC9",
+        "#E8B87E"
+      ],
+      "recommended_contrast_scores": {
+        "#FFD700": 74.8,
+        "#98D8C8": 39.4,
+        "#87CEEB": 46.3,
+        "#FFFDD0": 35.9,
+        "#C5E17A": 50.3
+      }
+    },
+    "filename": "indoor.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      59.63,
+      10.99,
+      19.38
+    ],
+    "ita_value": 26.41,
+    "skin_type": "Tan",
+    "hue_angle": 60.45,
+    "undertone": "Warm",
+    "undertone_confidence": "high",
+    "illuminant_bias": 3.26,
+    "confidence_notes": "Analyzed 1787 skin pixels across forehead & cheeks. Dominant cluster weight: 52.2%. Luminance Range: 32.4 to 81.8 L*.",
+    "season": "True Spring",
+    "depth_bucket": "medium",
+    "recommended_colors": [
+      "#FF6347",
+      "#FF8C00",
+      "#FFD700",
+      "#32CD32",
+      "#40E0D0",
+      "#FF7F50",
+      "#F0E68C",
+      "#E2725B"
+    ],
+    "avoid_colors": [
+      "#000000",
+      "#808080",
+      "#C8A2C8"
+    ],
+    "explanation": "True Spring (also called Warm Spring) skin has a distinctly warm, golden undertone at medium depth, with visible warmth in the cheeks. Saturated warm hues \u2014 coral, tomato red, golden yellow, turquoise, and lime green \u2014 harmonize with the skin's natural warmth and create a vibrant, healthy glow. Cool muted tones like lilac, flat grey, and stark black fight against the inherent warmth, making the complexion appear dull or yellowed.",
+    "audit": {
+      "recommended_contrast_scores": {
+        "#FF6347": 54.2,
+        "#FF8C00": 62.6,
+        "#FFD700": 74.2,
+        "#32CD32": 89.7,
+        "#40E0D0": 63.6,
+        "#FF7F50": 45.1,
+        "#F0E68C": 44.7,
+        "#E2725B": 33.4
+      }
+    },
+    "filename": "indoor10.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      79.42,
+      10.03,
+      18.56
+    ],
+    "ita_value": 57.76,
+    "skin_type": "Very Light",
+    "hue_angle": 61.62,
+    "undertone": "Warm",
+    "undertone_confidence": "high",
+    "illuminant_bias": 8.57,
+    "confidence_notes": "Analyzed 1184 skin pixels across forehead & cheeks. Dominant cluster weight: 43.0%. Luminance Range: 20.0 to 89.4 L*.",
+    "season": "Light Spring",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#FFD700",
+      "#98D8C8",
+      "#87CEEB",
+      "#FFFDD0",
+      "#C5E17A"
+    ],
+    "avoid_colors": [
+      "#000000",
+      "#36013F",
+      "#800020"
+    ],
+    "explanation": "Light Spring complexions have a warm undertone paired with fair to light skin, giving a delicate, sunlit quality. These palettes emphasize warm yet gentle colors \u2014 soft peach, golden yellow, warm pastels, and light greens \u2014 that echo the warmth in the skin without overwhelming the lightness. Heavy darks like black, deep purple, and burgundy create too stark a contrast and can make the complexion look washed-out or sallow.",
+    "audit": {
+      "low_contrast_removed": [
+        "#F5C6A0",
+        "#F7CAC9",
+        "#E8B87E"
+      ],
+      "recommended_contrast_scores": {
+        "#FFD700": 70.0,
+        "#98D8C8": 37.9,
+        "#87CEEB": 47.0,
+        "#FFFDD0": 25.4,
+        "#C5E17A": 45.6
+      }
+    },
+    "filename": "indoor11.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      38.43,
+      6.14,
+      14.35
+    ],
+    "ita_value": -38.89,
+    "skin_type": "Very Dark",
+    "hue_angle": 66.85,
+    "undertone": "Olive",
+    "undertone_confidence": "high",
+    "illuminant_bias": 5.7,
+    "confidence_notes": "Analyzed 79430 skin pixels across forehead & cheeks. Dominant cluster weight: 52.5%. Luminance Range: 23.2 to 78.5 L*.",
+    "season": "True Winter",
+    "depth_bucket": "deep",
+    "recommended_colors": [
+      "#191970",
+      "#DC143C",
+      "#2F4F4F",
+      "#4B0082",
+      "#FFFFFF",
+      "#008080",
+      "#800080",
+      "#C0C0C0"
+    ],
+    "avoid_colors": [
+      "#FF8C00",
+      "#F5DEB3",
+      "#DEB887"
+    ],
+    "explanation": "True Winter (Cool Winter) complexions are deep-skinned with a neutral undertone, featuring strong contrast between skin, hair, and features. Icy, bold, high-contrast cool tones \u2014 midnight blue, crimson, indigo, teal, and stark white \u2014 mirror the skin's dramatic cool depth. Warm earth tones like orange, wheat, and warm cream clash with the cool undertone and soften the natural high-contrast appearance in an unflattering way.",
+    "audit": {
+      "recommended_contrast_scores": {
+        "#191970": 72.5,
+        "#DC143C": 68.1,
+        "#2F4F4F": 26.4,
+        "#4B0082": 83.5,
+        "#FFFFFF": 63.5,
+        "#008080": 42.9,
+        "#800080": 73.8,
+        "#C0C0C0": 42.3
+      }
+    },
+    "filename": "indoor13.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      61.07,
+      13.34,
+      31.83
+    ],
+    "ita_value": 19.17,
+    "skin_type": "Tan",
+    "hue_angle": 67.25,
+    "undertone": "Olive",
+    "undertone_confidence": "medium",
+    "illuminant_bias": 22.68,
+    "confidence_notes": "Analyzed 8954 skin pixels across forehead & cheeks. Dominant cluster weight: 41.2%. Luminance Range: 44.2 to 79.7 L*. \u26a0 Moderate lighting cast detected (scene chroma bias 22.7, da*=5.2, db*=22.1). Results are likely acceptable, but natural daylight is recommended for best accuracy.",
+    "season": "True Autumn",
+    "depth_bucket": "medium",
+    "recommended_colors": [
+      "#D2691E",
+      "#B8860B",
+      "#8B4513",
+      "#556B2F",
+      "#CC5500",
+      "#DAA520"
+    ],
+    "avoid_colors": [
+      "#FF69B4",
+      "#E6E6FA",
+      "#87CEEB"
+    ],
+    "explanation": "True Autumn (Warm Autumn) skin has a distinctly warm, olive or golden undertone at medium depth. Rich, earthy warm tones \u2014 chocolate, burnt orange, goldenrod, olive green, and sienna \u2014 amplify the skin's natural warmth and create a rich, grounded look. Cool, light, or pastel shades like lavender, light sky blue, and hot pink conflict with the warm undertone and can make the complexion appear greenish or ashy.",
+    "audit": {
+      "low_contrast_removed": [
+        "#CD853F",
+        "#A0522D"
+      ],
+      "recommended_contrast_scores": {
+        "#D2691E": 34.8,
+        "#B8860B": 31.2,
+        "#8B4513": 28.5,
+        "#556B2F": 37.3,
+        "#CC5500": 43.4,
+        "#DAA520": 38.5
+      }
+    },
+    "filename": "indoor12.jpg"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      76.04,
+      11.28,
+      18.66
+    ],
+    "ita_value": 54.37,
+    "skin_type": "Light",
+    "hue_angle": 58.86,
+    "undertone": "Warm",
+    "undertone_confidence": "high",
+    "illuminant_bias": 7.69,
+    "confidence_notes": "Analyzed 11994 skin pixels across forehead & cheeks. Dominant cluster weight: 44.0%. Luminance Range: 41.0 to 83.8 L*.",
+    "season": "Light Spring",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#FFD700",
+      "#98D8C8",
+      "#87CEEB",
+      "#FFFDD0",
+      "#C5E17A"
+    ],
+    "avoid_colors": [
+      "#000000",
+      "#36013F",
+      "#800020"
+    ],
+    "explanation": "Light Spring complexions have a warm undertone paired with fair to light skin, giving a delicate, sunlit quality. These palettes emphasize warm yet gentle colors \u2014 soft peach, golden yellow, warm pastels, and light greens \u2014 that echo the warmth in the skin without overwhelming the lightness. Heavy darks like black, deep purple, and burgundy create too stark a contrast and can make the complexion look washed-out or sallow.",
+    "audit": {
+      "low_contrast_removed": [
+        "#F5C6A0",
+        "#F7CAC9",
+        "#E8B87E"
+      ],
+      "recommended_contrast_scores": {
+        "#FFD700": 70.6,
+        "#98D8C8": 39.4,
+        "#87CEEB": 47.8,
+        "#FFFDD0": 28.8,
+        "#C5E17A": 47.1
+      }
+    },
+    "filename": "Screenshot 2026-09-22 at 8.51.25\u202fPM.png"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      54.47,
+      16.72,
+      17.75
+    ],
+    "ita_value": 14.12,
+    "skin_type": "Tan",
+    "hue_angle": 46.71,
+    "undertone": "Cool",
+    "undertone_confidence": "high",
+    "illuminant_bias": 10.71,
+    "confidence_notes": "Analyzed 8799 skin pixels across forehead & cheeks. Dominant cluster weight: 45.7%. Luminance Range: 45.9 to 57.5 L*.",
+    "season": "True Summer",
+    "depth_bucket": "medium",
+    "recommended_colors": [
+      "#4682B4",
+      "#6B8E9B",
+      "#708090",
+      "#9370DB",
+      "#5F9EA0"
+    ],
+    "avoid_colors": [
+      "#FF8C00",
+      "#FFD700",
+      "#FF0000"
+    ],
+    "explanation": "True Summer (Cool Summer) skin has a definitively cool, pink or blue undertone at medium depth. The palette centers on cool, muted, mid-value hues \u2014 steel blue, dusty rose, medium purple, and slate grey \u2014 that mirror the skin's natural cool softness. Highly saturated warm colors like orange, gold, and bright red create a jarring discord with the cool undertone and can make the skin look ruddy or flushed.",
+    "audit": {
+      "low_contrast_removed": [
+        "#BC8F8F",
+        "#C08081",
+        "#D2B48C"
+      ],
+      "recommended_contrast_scores": {
+        "#4682B4": 54.1,
+        "#6B8E9B": 38.5,
+        "#708090": 34.1,
+        "#9370DB": 70.8,
+        "#5F9EA0": 44.8
+      }
+    },
+    "filename": "Screenshot 2026-09-22 at 8.50.46\u202fPM.png"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      81.7,
+      6.91,
+      18.75
+    ],
+    "ita_value": 59.4,
+    "skin_type": "Very Light",
+    "hue_angle": 69.77,
+    "undertone": "Olive",
+    "undertone_confidence": "high",
+    "illuminant_bias": 11.31,
+    "confidence_notes": "Analyzed 9882 skin pixels across forehead & cheeks. Dominant cluster weight: 49.6%. Luminance Range: 46.9 to 88.6 L*.",
+    "season": "Soft Autumn",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#8B7D6B",
+      "#A0522D",
+      "#967969"
+    ],
+    "avoid_colors": [
+      "#FF1493",
+      "#00FFFF",
+      "#000000"
+    ],
+    "explanation": "Soft Autumn complexions \u2014 often light-skinned with olive undertones \u2014 have warm but muted coloring with low contrast between hair, skin, and eyes. Earthy, desaturated warm tones like camel, sienna, sage, and cocoa harmonize with the skin's warm mutedness without adding harshness. Bright, electric colors like hot pink and cyan overpower the soft coloring, and stark black creates too much contrast, making the skin look sallow.",
+    "audit": {
+      "low_contrast_removed": [
+        "#C2B280",
+        "#BC8F8F",
+        "#9CAF88",
+        "#C5A880",
+        "#D4A76A"
+      ],
+      "recommended_contrast_scores": {
+        "#8B7D6B": 29.7,
+        "#A0522D": 47.2,
+        "#967969": 29.2
+      }
+    },
+    "filename": "Screenshot 2026-09-22 at 8.51.21\u202fPM.png"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      55.36,
+      12.43,
+      16.02
+    ],
+    "ita_value": 18.51,
+    "skin_type": "Tan",
+    "hue_angle": 52.19,
+    "undertone": "Neutral",
+    "undertone_confidence": "high",
+    "illuminant_bias": 12.16,
+    "confidence_notes": "Analyzed 6271 skin pixels across forehead & cheeks. Dominant cluster weight: 43.9%. Luminance Range: 38.2 to 63.9 L*.",
+    "season": "Soft Summer",
+    "depth_bucket": "medium",
+    "recommended_colors": [
+      "#778899",
+      "#8FBC8F",
+      "#9DB4C0",
+      "#B8A9C9",
+      "#7A9A7E"
+    ],
+    "avoid_colors": [
+      "#FF1493",
+      "#FF4500",
+      "#FFFF00"
+    ],
+    "explanation": "Soft Summer complexions are medium-depth with a neutral undertone that leans slightly cool. They have low contrast and a muted, smoky quality. The palette emphasizes dusty, greyed, and softened tones \u2014 sage green, dusty mauve, greige, and muted lilac \u2014 that blend with the skin's natural subtlety. Vivid, electric, or neon colors like hot pink, orange-red, and bright yellow overwhelm the complexion and make it look faded by comparison.",
+    "audit": {
+      "low_contrast_removed": [
+        "#C4AEAD",
+        "#A09B8C",
+        "#8B8589"
+      ],
+      "recommended_contrast_scores": {
+        "#778899": 30.8,
+        "#8FBC8F": 40.0,
+        "#9DB4C0": 34.7,
+        "#B8A9C9": 34.3,
+        "#7A9A7E": 30.2
+      }
+    },
+    "filename": "Screenshot 2026-09-22 at 8.50.51\u202fPM.png"
+  },
+  {
+    "success": true,
+    "dominant_lab": [
+      88.42,
+      4.53,
+      18.14
+    ],
+    "ita_value": 64.73,
+    "skin_type": "Very Light",
+    "hue_angle": 75.97,
+    "undertone": "Olive",
+    "undertone_confidence": "high",
+    "illuminant_bias": 9.98,
+    "confidence_notes": "Analyzed 12543 skin pixels across forehead & cheeks. Dominant cluster weight: 43.2%. Luminance Range: 57.0 to 92.0 L*.",
+    "season": "Soft Autumn",
+    "depth_bucket": "light",
+    "recommended_colors": [
+      "#BC8F8F",
+      "#8B7D6B",
+      "#A0522D",
+      "#9CAF88",
+      "#D4A76A",
+      "#967969"
+    ],
+    "avoid_colors": [
+      "#FF1493",
+      "#00FFFF",
+      "#000000"
+    ],
+    "explanation": "Soft Autumn complexions \u2014 often light-skinned with olive undertones \u2014 have warm but muted coloring with low contrast between hair, skin, and eyes. Earthy, desaturated warm tones like camel, sienna, sage, and cocoa harmonize with the skin's warm mutedness without adding harshness. Bright, electric colors like hot pink and cyan overpower the soft coloring, and stark black creates too much contrast, making the skin look sallow.",
+    "audit": {
+      "low_contrast_removed": [
+        "#C2B280",
+        "#C5A880"
+      ],
+      "recommended_contrast_scores": {
+        "#BC8F8F": 30.1,
+        "#8B7D6B": 35.9,
+        "#A0522D": 54.0,
+        "#9CAF88": 26.6,
+        "#D4A76A": 26.4,
+        "#967969": 35.9
+      }
+    },
+    "filename": "Screenshot 2026-09-22 at 8.51.16\u202fPM.png"
+  }
+]

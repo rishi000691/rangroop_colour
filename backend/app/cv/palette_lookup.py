@@ -254,6 +254,8 @@ SEASON_PALETTES: Dict[str, Dict[str, Any]] = {
             "#D8BFD8",  # Thistle
             "#ACE1AF",  # Celadon Green
             "#F0E0E0",  # Soft Rose
+            "#C05077",  # Deep Rose
+            "#2C7273",  # Spruce Green
         ],
         "avoid_colors": [
             "#FF4500",  # Orange-Red
@@ -336,6 +338,8 @@ SEASON_PALETTES: Dict[str, Dict[str, Any]] = {
             "#C5A880",  # Warm Camel
             "#D4A76A",  # Soft Mustard
             "#967969",  # Cocoa
+            "#C04000",  # Mahogany
+            "#4A5D23",  # Deep Olive
         ],
         "avoid_colors": [
             "#FF1493",  # Hot Pink

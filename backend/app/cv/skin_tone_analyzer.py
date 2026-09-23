@@ -143,7 +143,7 @@ def classify_undertone(a_star: float, b_star: float) -> Tuple[str, float]:
     # which correctly falls in the Cool range rather than Warm.
     signed_hue = hue_angle if hue_angle <= 180.0 else hue_angle - 360.0
 
-    if red_chroma_ratio < 0.44 and b_star > 8.0:
+    if red_chroma_ratio < 0.35 and b_star > 8.0:
         undertone = "Olive"
     elif signed_hue >= 58.0:
         undertone = "Warm"
